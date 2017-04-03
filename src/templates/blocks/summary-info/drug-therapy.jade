@@ -1,0 +1,26 @@
+.widget.drug-therapy
+    .title Медикаментозная терапия
+    .content
+        table.regular-font
+            thead
+                tr.dark-color
+                    th Наименование
+                    th Способ ввода
+                    th Дозировка
+                    th Продолжительность
+                    th Введено за месяц
+            tbody
+            -var n = 0
+            while n < 20
+                -n++
+                tr.dark-color
+                    td Альфа ДЗ-Тева
+                    td Энтерально
+                    td Дни приема: Пн, Вт, Ср,
+                     | Чт, Пт, Сб, Вс 1. 08:00:00,
+                     | Доза: 0.25 мкг;
+
+                    td с 22.01.2015 по
+                     | неопред. срок
+
+                    td

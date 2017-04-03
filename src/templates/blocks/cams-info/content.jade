@@ -1,0 +1,64 @@
+include couch
+include checkin-block
+include checkin-process-block
+include water-treatment
+include empty-block
+include camera-block
+
+.cams-info-content
+    ul.paginataion.tabs
+        li.active.tab-title
+            a Зал №1
+
+        li.tab-title
+            a Зал №2
+
+        li.tab-title
+            a Зал №3
+
+        li.tab-title
+            a Зал №4
+
+        li.tab-title
+            a Check In
+
+        li.tab-title
+            a Водоподготовка
+
+        li.tab-title
+            a Электричество
+
+        li.tab-title
+            a Стационар №1-14
+
+        li.tab-title
+            a Стационар №15-29
+
+        li.tab-title
+            a Пит №1
+
+        li.tab-title.show-video-on-all
+            a
+                .checkbox.fa.fa-square-o
+                | Показывать видео на всех
+
+
+    .info-wrapper
+        - for (var x = 0; x < 6; x++)
+            +cameraBlock("Камера №" + (x + 1))
+                +couchBlock("Турченко Л.А.", "i/content/avatar.jpg", "Smartscan - Diascan: Низкий KT/V", true, "-159")
+                +couchBlock("Турченко Л.А.", "i/content/avatar.jpg", "Достигнут нижний предел насоса", false, "48")
+                +couchBlock("Турченко Л.А.", "i/content/avatar.jpg", "", false, "-159")
+                +couchBlock("Турченко Л.А.", "i/content/avatar.jpg", "Нет действующего предписания", false, "48")
+
+        +cameraBlock("Камера №7")
+            +checkinBlock()
+            +checkinProcessBlock("Турченко Л.А.", "i/content/avatar.jpg", "Нет действующего предписания", "48")
+            +emptyBlock()
+            +emptyBlock()
+
+        +cameraBlock("Камера №8")
+            +waterTreatment()
+            +waterTreatment()
+            +emptyBlock()
+            +emptyBlock()

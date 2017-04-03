@@ -1,0 +1,42 @@
+.menu-bar
+  display: flex
+  flex-direction: column
+  margin-bottom: 10px
+
+  .menu-list, .submenu-list
+    display: flex
+    flex-direction: row
+
+  .menu-list
+    height: 50px
+    background: $highlighted-block-color
+    box-shadow: 1px 2px 5px #000
+    list-style: none
+    margin: 0
+    font-size: 0.8rem
+
+    li
+      display: flex
+      flex-direction: row
+      line-height: 1.1em
+      cursor: pointer
+      align-items: center
+      color: $font-color
+      padding: 0 20px
+
+      &.active
+        background: $block-color
+
+      .icon
+        font-size: 2.5rem
+        margin-right: 5px
+
+  .submenu-list.tabs
+    height: 30px
+    margin-top: 1px
+
+    .tab-title
+      margin-right: 1px
+
+      a
+        color: $dark-font-color

@@ -1,0 +1,280 @@
+.bone-mineral
+    .header
+        .left
+            ul.tabs
+                li.tab-title.active
+                    a Диагностика
+
+                li.tab-title.open-bone-mineral-program
+                    a Программа лечения
+
+        .right
+            .button Показать график
+
+
+    .reception-form-content
+        .step
+            .title Шаг 1. Проверьте лабораторные исследования
+
+            .row
+                table.transparent.measures
+                    thead
+                        tr
+                            th
+                            th Значение
+                            th Ед.изм
+                            th Дата измерения
+                            th Динамика
+
+                    tbody
+                        tr
+                            td.hold-right
+                                .label-big Кальций общий скорректированный по альбумину (Ca), (Ca Alb)
+                            td
+                                input( value = '1.9' )
+                            td
+                                input( value = 'ммоль/л' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Кальций ионизированный, (Ca++), (Calcium ionized)
+                            td
+                                input( value = '1.2' )
+                            td
+                                input( value = 'ммоль/л' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Фосфор, (P), (Phosphorus)
+                            td
+                                input( value = '1.1' )
+                            td
+                                input( value = 'ммоль/л' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+                        tr
+                            td.hold-right
+                                .label-big Паратгормон интактный (паратиреоидный гормон) (ПТГ), (PTH)
+                            td
+                                input( value = '230.3' )
+                            td
+                                input( value = 'пг/мл' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Щелочная Фосфатаза (ЩФ), (ALP), (Alkaline phosphatase)
+                            td
+                                input( value = '96' )
+                            td
+                                input( value = 'ЕД/л' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Альбумин, (Alb)
+                            td
+                                input( value = '40.4c' )
+                            td
+                                input( value = 'г/л' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+                        tr
+                            td.hold-right
+                                .label-big 25-гидрокси (кальциферол), (Витамин D)
+                            td
+                                input( value = '' )
+                            td
+                                input( value = '' )
+                            td
+                                .date
+                                    input( value = '' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td Нет данных
+
+        .step
+            .title Шаг 2. Проверьте инструментальные исследования
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Эхокардиография
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Ультразвуковая денситометрия
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+                    a Открыть исследование
+
+                .info
+                    .type УЗИ щитовидных желез (04.12.2015)
+                    .description Патологии ЩЖ не выявлено.
+
+
+        .step
+            .title Шаг 4. Уточните диагноз
+
+            .row
+                table.transparent.nosologies
+                    thead
+                        tr
+                            th
+                            th Вероятная нозология
+                            th
+                            th Нозология в диагнозе
+
+                    tbody
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Phosphorus exchange disorders
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Calcium exchange disorders
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Parathormone exchange disorders
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Osteoporosis
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Pathologic fractures
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Bone density disorders
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )
+
+                        tr
+                            td.hold-right
+                                .label-big
+                                    | Renal osteodystrophy
+                                    span.fa.fa-info-circle
+                            td
+                                select
+                                    option Не выявлена
+                            td
+                                .button.icon-button
+                                    .fa.fa-angle-double-right
+
+                            td
+                                input( value = 'Не выявлена' )

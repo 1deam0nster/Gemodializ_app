@@ -1,0 +1,54 @@
+.summary-info
+  +growFlexColumn()
+
+  .top-widgets-block, .bottom-widgets-block
+    display: flex
+    flex-direction: row
+
+    .column-block
+      +growFlexColumn()
+
+      &.width-25
+        width: 25%
+
+      &.width-50
+        width: 50%
+
+
+.complications-control
+  .title
+    +growFlexRow
+    justify-content: space-between
+
+    .legend
+      +flexRow
+      +verticalCenteredText
+
+      .line
+        width: 15px
+        height: 2px
+        margin: 0 5px 0 15px
+
+        &.red
+          background: #bc595d
+
+        &.light-blue
+          background: #67b7e9
+
+        &.blue
+          background: #2f7eac
+
+
+  .tabs
+    margin-top: 10px
+
+    a
+      color: $dark-font-color
+
+.laboratory-analysis, .notifications
+  .content
+    height: 126px
+
+.drug-therapy
+  .content
+    height: 432px

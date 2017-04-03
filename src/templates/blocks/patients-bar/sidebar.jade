@@ -1,0 +1,20 @@
+include patient-popup
+include journal-popup
+include documents-archive-popup
+include check-diagnosis-popup
+.patient-bar
+    .switcher-block
+
+        ul.patient-switcher.tabs.hold-left
+            li.tab-title
+                a.fa.fa-user-plus.patient-popup-open
+            li.active.tab-title.switch-patient-tab(data-tab = 0)
+                a Всё пациенты
+            li.tab-title.switch-patient-tab(data-tab = 1)
+                a Шалин П.П.
+
+    .switcher-content
+        .block(data-id = 0)
+            include all-patients
+        .block(data-id = 1)
+            include current-patient

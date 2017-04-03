@@ -1,0 +1,32 @@
+.gradient-pagination
+  height: 40px
+  margin: 4px 0
+
+  .gradient-part-left
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.15))
+
+  .gradient-part-right
+    background: linear-gradient(to right, rgba(255,255,255,0.15)50%, transparent)
+
+  .prev,
+  .page-item,
+  .next
+    +verticalCenteredText()
+    padding: 0 15px
+    height: 40px
+    background: rgba(255,255,255,0.15)
+    color: #fff
+    margin: 0 .5px
+    text-shadow: 1px 1px #000
+
+  .page-item.active
+    background: rgba(255, 255, 255, 0.3)
+
+  .prev
+    margin: 0 .5px 0 1px
+    .arrow
+      +sprite($back)
+  .next
+    margin: 0 1px 0 .5px
+    .arrow
+      +sprite($next)

@@ -1,0 +1,130 @@
+.bone-mineral-program
+    .header
+        .left
+            ul.tabs
+                li.tab-title.open-bone-mineral
+                    a Диагностика
+
+                li.tab-title.active
+                    a Программа лечения
+
+        .right
+            .button Показать график
+
+
+    .reception-form-content
+        .step
+            .title Параметры состояния пациента
+
+            .row
+                table.transparent.measures
+                    thead
+                        tr
+                            th Параметр
+                            th Последнее значение
+                            th за 30 дней
+                            th Динамика
+
+                    tbody
+                        tr
+                            td.hold-left Кальций общий скорректированный по альбумину (Ca), (Ca Alb)
+                            td 1.9 ммоль/л
+                            td
+                                .fa.fa-long-arrow-up
+                                span 0.11
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-left Фосфор, (P), (Phosphorus)
+                            td 1.1 ммоль/л
+                            td
+                                .fa.fa-long-arrow-down
+                                span 1.25
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+                        tr
+                            td.hold-left Паратгормон интактный (паратиреоидный гормон) (ПТГ), (PTH)
+                            td 230.3 пг/мл
+                            td
+                                .fa.fa-long-arrow-down
+                                span 100.2
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+        .step
+            .title Инструментальные исследования
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Эхокардиография
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Ультразвуковая денситометрия
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+                    a Открыть исследование
+
+                .info
+                    .type УЗИ щитовидных желез (04.12.2015)
+                    .description Патологии ЩЖ не выявлено.
+
+
+        .step
+            .title Медикаментозные назначения
+
+            .row
+                table.transparent.appointments
+                    thead
+                        tr
+                            th
+                            th Введено за 30 дней
+                            th Изменение за 30 дней
+                            th Динамика
+
+                    tbody
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Фосфат-связывающие препараты (Назначение не требуется)
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Кальцимиметики (Назначение по необходимости)
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Селективные активаторы рецептора витамина D (Назначение не требуется)
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Витамины и витаминоподобные средства (Назначение не требуется)
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Комбинированные и другие препараты
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено

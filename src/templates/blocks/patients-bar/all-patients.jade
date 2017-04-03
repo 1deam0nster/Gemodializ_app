@@ -1,0 +1,86 @@
+.search-block
+    input.patient-search-textbox.search( placeholder = "Поиск по названию..." )
+
+    ul.division-switcher.tabs
+        li.tab-title.active
+            a Все пациенты
+        li.tab-title
+            a Амбулатория
+        li.tab-title
+            a Стационар
+        li.tab-title
+            a Архив
+
+.filter-block
+    .filter-toggler.button
+        .icon.fa.fa-filter
+        | Фильтр
+    .filter-settings
+        .parameter
+            .title Стадия ХБП
+            .value
+                select
+                    option Без стадии
+                    option 0 стадия
+                    option 1 стадия
+                    option 2 стадия
+                    option 3а стадия
+                    option 3б стадия
+                    option 4 стадия
+                    option 5 стадия
+                    option 5д стадия
+                    option ОПП
+
+        .parameter
+            .title Приёмный день
+            .value
+                ul.tabs
+                    li.tab-title.active
+                        a Не важно
+                    li.tab-title
+                        a Сегодня
+                    li.tab-title
+                        a Завтра
+                    li.tab-title
+                        a Дата
+
+        .parameter
+            .title Лечащий врач
+            .value
+                select
+                    option Все врачи
+                    option Назаренко А.Е.
+                    option Винокуров П.А.
+
+        .parameter
+            .title Смена
+            .value
+                ul.tabs
+                    li.tab-title.active
+                        a Все смены
+                    li.tab-title
+                        a 1
+                    li.tab-title
+                        a 2
+
+.patient-list-block
+    table.patient-list
+        thead
+            tr
+                th Фото
+                th ФИО
+                th Возр.
+                th Пол
+                th ХБП
+
+        tbody
+        - var n = 0
+        while n < 20
+            -n++
+            tr
+                td
+                    img(src="i/content/avatar.jpg")
+                td Плетнёв Игорь Михайлович
+                td 41
+                td М
+                td 5д

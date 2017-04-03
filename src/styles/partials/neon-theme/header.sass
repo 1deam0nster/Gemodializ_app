@@ -1,0 +1,66 @@
+#header
+  .logo, .account
+    background: $header-color
+    color: #2c97cf
+
+  .logo
+    text-align: left
+    margin-left: 20px
+
+    img
+      margin: 0
+      height: 45px
+
+  ul.main-menu
+
+    a li
+      font-weight: 300
+      color: #fff
+
+    li
+      height: $header-height
+
+    li:not(.separator):hover
+      +hoverEffect
+
+  .header-menu
+    background-color: #333232
+
+    ul a li
+      color: #fff
+
+  .account
+    flex: 0 0 400px
+
+    .account-menu
+      flex: 0 0 250px
+
+    .account-menu:hover, .nurse-account:hover
+      background: linear-gradient(0deg, #333333, #242424)
+
+      .account-menu-content
+        display: none
+        position: absolute
+        margin: 70px 0 0 -225px
+        background-color: #333232
+        width: 250px
+        font-size: 1.1em
+
+    .options
+      .icon-gear
+        text-shadow: 0px 0px 5px #2c97cf
+
+    .signout, .username
+      color: #2c97cf
+
+    .signout
+      text-shadow: 0px 0px 7px #2c97cf
+
+      .icon.icon-switch
+        width: 100%
+        font-size: 1.5em !important
+        margin: 25px 0 !important
+        text-align: center
+
+      &:hover
+        +hoverEffect

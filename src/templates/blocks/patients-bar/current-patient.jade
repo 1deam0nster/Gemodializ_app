@@ -1,0 +1,55 @@
+.base-data-block
+    .wrapper
+        img(src='i/content/avatar.jpg')
+        .info
+            p
+                span М 57 лет
+            p Амб. карта:
+                span  1140
+            p В отделении с:
+                span  14.01.2015
+            p Лечащий врач:
+                span  Костерин Ю.А.(амб.)
+            p Стадия ХБП:
+                span  1
+
+    ul.tabs
+        li.tab-title
+            a.patient-popup-open Данные пациента
+        li.tab-title
+            a.open-documents-archive  Архив документов
+        li.tab-title
+            a.open-patient-journal Журнал госпитализаций
+
+    select.reports
+        option Выберите отчёт для печати...
+        option(value="1") Согласие на оказание медпомощи (у пациента)
+        option(value="2") Согласие на оказание медпомощи (у родственников)
+        option(value="3") Согласие на обработку персональных данных
+        option(value="4") Медицинская карта амбулаторного больного
+
+.clinical-diagnosis-block
+    .title-bar
+        .title Диагноз клинический
+        .check-diagnosis Проверить диагноз
+
+    .diagnosis-list
+        .diagnosis-type Основной:
+        .diagnosis-item
+            .date 04.02.2015
+            .value N03.9 Хронический нефритическйи синдром - неуточненное изменение
+
+        .diagnosis-type Осложнения основного:
+        .diagnosis-item
+            .date
+            .value Не назначен
+
+        .diagnosis-type Сопутствующий:
+        .diagnosis-item
+            .date 04.02.2015
+            .value E11 Инсулиннезависимый сахарный диабет
+
+        .diagnosis-type Пропущенные нозологии:
+        .diagnosis-item
+            .date
+            .value Отсутствуют

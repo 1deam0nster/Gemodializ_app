@@ -1,0 +1,138 @@
+.hypertension-program
+    .header
+        .left
+            ul.tabs
+                li.tab-title.open-hypertension
+                    a Диагностика
+
+                li.tab-title.active
+                    a Программа лечения
+
+        .right
+            .button Показать график
+
+
+    .reception-form-content
+        .step
+            .title Параметры состояния пациента
+
+            .row
+                table.transparent.measures
+                    thead
+                        tr
+                            th
+                            th Значение
+                            th Ед.изм
+                            th Дата измерения
+                            th Динамика
+
+                    tbody
+                        tr
+                            td.hold-right
+                                .label-big Систолическое АД по ГД
+                            td
+                                input( value = '152' )
+                            td
+                                input( value = 'мм рт.ст.' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Систолическое АД во время ГД
+                            td
+                                input( value = '152' )
+                            td
+                                input( value = 'мм рт.ст.' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-right
+                                .label-big Систолическое АД после ГД
+                            td
+                                input( value = '152' )
+                            td
+                                input( value = 'мм рт.ст.' )
+                            td
+                                .date
+                                    input( value = '29.02.2016' )
+                                    .button.icon-button
+                                        .fa.fa-calendar
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+        .step
+            .title Медикаментозные назначения
+
+            .row
+                table.transparent.appointments
+                    thead
+                        tr
+                            th
+                            th Введено за 30 дней
+                            th Изменение за 30 дней
+                            th Динамика
+                            th
+
+                    tbody
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Ингибиторы ангиотензинпревращающего фермента
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Блокаторы рецепторов ангиотензина II
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Диуретики
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Бета-адреноблокаторы
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Альфа-адреномиметики
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Блокаторы кальциевых каналов
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Комбинированные и другие препараты
+
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено

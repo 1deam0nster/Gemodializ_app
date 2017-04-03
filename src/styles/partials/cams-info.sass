@@ -1,0 +1,215 @@
+.cams-info-content
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+  ul.paginataion
+    padding-bottom: 10px
+
+    li
+      margin: 0 10px 0 0
+
+    li.show-video-on-all
+      a
+        +verticalCenteredText()
+
+  .info-wrapper
+    +growFlexRow()
+    flex-wrap: wrap
+    justify-content: center
+
+    .camera-block
+      display: flex
+      flex-direction: column
+
+      .title
+        margin: 0 2px 5px 0
+        font-size: 0.8rem
+        font-weight: 300
+        text-align: center
+
+      .camera-block-content
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+        width: 496px
+        height: 452px
+
+        .couch, .checkin-block, .checkin-process-block, .empty-block, .water-treatment, .hospital-block
+          width: 245px
+          height: 222px
+          color: $font-color
+          font-size: 0.8rem
+          font-weight: 300
+          padding: 3px
+
+        .checkin-block, .water-treatment
+          .title
+            margin: 0 0 2px 0
+            font-weight: 300
+            border: 0
+
+        .patient-avatar
+          width: 64px
+          height: 87px
+          margin-right: 2px
+
+        .block-row
+          +growFlexRow()
+          +verticalCenteredText()
+          justify-content: space-between
+          align-items: center
+          height: 20px
+
+        .block-row, .warning-info
+          margin: 2px 0
+          padding: 3px
+
+        .block-row.two-lines
+          height: 40px
+
+          p
+            font-size: 0.7rem
+            margin: 0
+            font-weight: 300
+            text-align: right
+
+        .couch
+          .base-info
+            +growFlexRow()
+
+            .base-info-block
+              display: flex
+              flex-direction: column
+
+              .main-info-block
+                +growFlexRow()
+                flex: 0 0 20px
+
+                .position
+                  +verticalCenteredText()
+                  width: 24px
+                  height: 20px
+                  text-align: center
+                  padding: 3px
+                  margin-right: 2px
+
+                .name-block
+                  +growFlexRow()
+                  +verticalCenteredText()
+                  height: 20px
+                  justify-content: space-between
+                  padding: 3px
+
+                  .name, .age
+                    +verticalCenteredText()
+
+            .block-row:last-child
+              margin-top: 0px
+              height: 43px
+
+
+          .warning-info
+            +growFlexRow()
+            +verticalCenteredText()
+            font-size: 0.7rem
+            font-weight: normal
+
+
+        .checkin-process-block, .hospital-block
+          .base-info
+            +growFlexRow()
+
+            .base-info-block
+              display: flex
+              flex-direction: column
+              flex-grow: 1
+
+              .main-info-block
+                +growFlexRow()
+                flex: 0 0 20px
+
+                .position
+                  +verticalCenteredText()
+                  width: 64px
+                  height: 20px
+                  text-align: center
+                  padding: 1px
+                  margin-right: 2px
+
+                .name-block
+                  +growFlexRow()
+                  +verticalCenteredText()
+                  height: 20px
+                  justify-content: space-between
+                  padding: 3px
+
+                  .name, .age
+                    +verticalCenteredText()
+
+              .checkin-data
+                +growFlexRow()
+                margin-bottom: 2px
+
+                .left-side
+                  margin-top: 2px
+
+                .right-side
+                  font-size: 0.7rem
+                  display: flex
+                  flex-direction: column
+                  flex-grow: 1
+
+                  .block-row
+                    margin: 1px 0 0
+
+                    &:first-child
+                      margin-top: 2px
+
+          .warning-info
+            height: 60px
+
+            p
+              font-size: 0.8rem
+              margin-bottom: 0px
+              font-weight: 300
+
+        .hospital-block
+          .warning-info
+            height: auto
+
+            p
+              font-size: 0.6rem
+              line-height: 0.7rem
+
+  table.additional-info, table.checkin-table, table.water-treatment-table
+    margin: -2px 0 -2px -2px
+    width: 243px
+
+    thead tr th,
+    tbody tr td
+      height: 1em
+      font-size: 0.7rem
+      padding: 0
+      font-weight: 300
+
+  table.checkin-table
+    thead tr, tbody tr
+      td:first-child, th:first-child
+        text-align: left
+        padding-left: 2px
+
+
+  table.water-treatment-table
+    thead tr th
+      padding: 0 15px
+
+      &:first-child
+        padding: 0 20px
+
+    tbody tr td
+      width: 25%
+
+      &:first-child
+        padding: 0 5px

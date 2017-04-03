@@ -1,0 +1,143 @@
+.patient-popup
+  display: none
+  width: 1044px
+  height: 540px
+  top: calc(50vh - 270px)
+  left: calc(50vw - 522px)
+
+  .title
+    .switcher
+      +flexRow
+      padding-right: 5px
+
+  .content
+    +flexColumn
+
+    .row
+      .left-bar
+        +flexColumn
+        margin-right: 1px
+
+        img
+          width: 185px
+          height: 250px
+          background: $popup-background
+
+        ul.pages
+          margin: 0
+          list-style: none
+
+          li
+            +growFlexRow
+            height: 30px
+            align-items: center
+            padding: 0 4px 0 5px
+            background: $popup-background
+            font-weight: 300
+            margin-top: 1px
+            cursor: pointer
+
+            &.active
+              background: #547c91
+
+            .bage
+              width: 20px
+              height: 20px
+              padding: 1px 5px
+              margin-right: 6px
+              background: $border-color
+              border-radius: 50%
+              text-align: center
+
+        .extender
+          background: $popup-background
+          margin-top: 1px
+
+      .right-block
+        +flexColumn
+        background: $popup-background
+
+        .column-block
+          padding: 15px 10px
+
+          &.first .row p
+            margin: 0 20px 0 0
+
+          .header
+            text-transform: uppercase
+            border-bottom: 1px solid $font-color
+            padding-bottom: 3px
+            font-size: 1rem
+            font-weight: 300
+
+          .row
+            +verticalCenteredText
+            margin-top: 10px
+
+            p
+              width: 110px
+              margin: 0
+              line-height: 0.9rem
+
+              &.small
+                width: 70px
+                margin-right: 0
+                padding-right: 10px
+                text-align: right
+
+            .datetime
+              +flexRow
+
+              input
+                width: 208px
+
+              .button
+                background: $block-color
+                height: 30px
+                margin-right: 0
+
+                &:hover
+                  background: $highlighted-block-color
+
+
+            .inline-row
+              margin-top: 10px
+
+              .checkbox
+                font-size: 1.4rem
+
+            input, select
+              width: 268px
+
+              &.small
+                width: 99px !important
+
+            .column-block
+              padding: 0
+
+              select
+                margin-top: 10px
+
+        .full-row
+          padding: 15px 10px
+
+          p
+            width: 110px
+            margin: 0 20px 0 0
+            line-height: 0.9rem
+
+          textarea
+            flex-grow: 1
+            max-width: 708px
+            max-height: 250px
+
+  .actions
+    .left, .right
+
+      i.l-arr
+        +sprite($l-arrow)
+        margin-right: 10px
+
+      i.r-arr
+        +sprite($r-arrow)
+        margin-left: 10px

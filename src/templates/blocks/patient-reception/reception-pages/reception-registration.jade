@@ -1,0 +1,38 @@
+.reception-registration
+    .header
+        span Регистрация приёма
+
+    .reception-form-content
+        .row
+            label Тип приёма
+            select
+                option Консультативный
+
+        .row
+            label Дата и время приёма
+            .datetime
+                input(value = "21.09.2015 16:59")
+                .button.icon-button
+                    .fa.fa-calendar
+                .button.icon-button
+                    .fa.fa-clock-o
+
+        .row
+            label.small.full-width При наличии данных по пациенту, вы можете внести их, выбрав соответствующий раздел
+
+
+        .row
+            label
+            .button.open-laboratory-analysis-popup Внести лабораторные исследования
+
+        .row
+            label
+            .button.open-instrumental-analysis-popup Внести инструментальные исследования
+
+        .row
+            label
+            .button.open-upload-attachment-popup Приложить отсканированные документы
+
+        .row
+            label
+            .button.open-diagnoses-popup Внести диагноз

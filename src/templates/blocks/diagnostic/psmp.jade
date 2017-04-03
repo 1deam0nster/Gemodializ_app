@@ -1,0 +1,45 @@
+.psmp-content
+    .filter-bar
+        .column-block
+            .row
+                p Возможные причины:
+                select
+                    option Автоматически
+                    option По алфавиту
+
+            .row
+                p Диагноз:
+                select
+                    option По дате добавления
+                    option По алфавиту
+                    option По опасности
+                    option По активности
+
+                .button Фильтр нозологий
+
+            .row
+                p Возможные последствия:
+                select
+                    option Автоматически
+                    option По алфавиту
+
+                .button Фильтр нозологий
+
+        .column-block
+            p.centered Тяжесть состояния пациента
+            .patient-status.row
+                .normal В норме
+                .low Низкая
+                .middle Средняя
+                .high Высокая
+
+            .row.checkbox-row
+                .checkbox.fa.fa-square-o
+                span Использовать цветовое кодирование нозологий
+
+            .row.checkbox-row
+                .checkbox.fa.fa-square-o
+                span Показать причины наибольшего количества нозологий из диагноза
+
+    .graph-content
+        img(src='i/content/graph.png')

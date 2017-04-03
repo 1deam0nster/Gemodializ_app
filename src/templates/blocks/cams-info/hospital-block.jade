@@ -1,0 +1,56 @@
+mixin hospitalBlock(patientName, patientPhotoSrc, alertedSummary, hardcodeNumber)
+    .hospital-block
+        .base-info
+            .base-info-block
+                .main-info-block
+                    .position С05
+                    .name-block
+                        .name= patientName
+                        .age 55 лет
+
+                .checkin-data
+                    .left-side
+                        img(src= patientPhotoSrc).patient-avatar
+
+                    .right-side
+                        .block-row
+                            span Поступил
+                            span 04.08.2015 (7)
+
+                        .block-row.two-lines
+                            span Осмотр
+                            .group
+                                p 05.08.2015
+                                p Костерин Ю.А.
+
+                        .block-row
+                            span САД/ДАД/ЧСС
+                            span 162/100/579
+
+        table.additional-info
+            thead
+                tr
+                    th ХБП
+                    th КСГ
+                    th T, &deg;C
+                    th Creat
+                    th Диурез
+
+            tbody
+                tr
+                    td(rowspan = 2) 300
+                    td(rowspan = 2) 0
+                    td 3.2 л.
+                    td - л
+                    td 1.9 %
+
+                tr.previous
+
+                    td -
+                    td 0
+                    td -
+
+        .warning-info
+            p N08.3* Гломерулярные поражения при са...
+            p.grey N08.3* Хроническая болезнь почки, стадия 3
+            p Подбор, коррекция программы лечения

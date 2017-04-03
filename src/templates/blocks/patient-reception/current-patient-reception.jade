@@ -1,0 +1,97 @@
+.current-patient-reception
+    include popups/laboratory-analysis-popup
+    include popups/instrumental-analysis-popup
+    include popups/upload-attachment-popup
+    include popups/diagnoses-popup
+    include popups/ckd-phase-popup
+
+    .reception-content
+        .menu-list-bar
+            .header Консультативный приём 31.07.2015
+            ul.menu-list
+                li.reception-page-selector.active( data-partial = '.reception-registration')
+                    .bage 1
+                    span Регистрация приёма
+
+                li.reception-page-selector( data-partial = '.ckd-phase')
+                    .bage 2
+                    span Стадия ХБП
+
+                li
+                    .bage 3
+                    span Физикальные исследования
+
+                ul.submenu-list
+                    li.reception-page-selector( data-partial = '.complaints') Жалобы
+                    li.reception-page-selector( data-partial = '.anamnesis') Анамнез
+                    li.reception-page-selector( data-partial = '.inspection') Осмотр
+
+                li
+                    .bage 4
+                    span Осложнения ХБП
+
+                ul.submenu-list
+                    li.reception-page-selector( data-partial = '.anemia') Анемия
+                    li.reception-page-selector( data-partial = '.bone-mineral') Костно-минеральный обмен
+                    li.reception-page-selector( data-partial = '.hypertension') Гипертензия
+                    li.reception-page-selector( data-partial = '.hsn') ХСН
+
+                li
+                    .bage 5
+                    span Диагностика
+
+                ul.submenu-list
+                    li.reception-page-selector( data-partial = '.diagnoses') Диагнозы пациента
+
+                li
+                    .bage 6
+                    span Назначения
+
+                ul.submenu-list
+                    li.reception-page-selector( data-partial = '.laboratory-analysis') Лабораторные исследования
+                    li.reception-page-selector( data-partial = '.instrumental-analysis') Инструментальные исследования
+                    li.reception-page-selector( data-partial = '.meds') Медикаменты
+
+                li.reception-page-selector( data-partial = '.result')
+                    .bage 7
+                    span Заключения
+
+            .extender
+
+        .reception-form
+            include reception-pages/reception-registration
+            include reception-pages/ckd-phase
+            include reception-pages/ckd-phase-journal
+            include reception-pages/complaints
+            include reception-pages/anamnesis
+            include reception-pages/inspection
+            include reception-pages/anemia
+            include reception-pages/anemia-program
+            include reception-pages/bone-mineral
+            include reception-pages/bone-mineral-program
+            include reception-pages/hypertension
+            include reception-pages/hypertension-program
+            include reception-pages/hsn
+            include reception-pages/diagnoses
+            include reception-pages/laboratory-analysis
+            include reception-pages/instrumental-analysis
+            include reception-pages/meds
+            include reception-pages/result
+            .extender
+
+    .reception-actions
+        .left
+            .button
+                .fa.fa-arrow-left
+                span Назад
+
+            .button
+                span Далее
+                .fa.fa-arrow-right
+        .right
+            .button Печать документов
+            .button.close-reception Сохранить и завершить осмотр
+            .button.close-reception Отмена
+
+script.
+    $(".ckd-phase-popup > .content").mCustomScrollbar({theme: "minimal"});

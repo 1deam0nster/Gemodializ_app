@@ -1,0 +1,26 @@
+.laboratory-analysis-popup
+  width: 600px
+  height: 600px
+  top: calc(50vh - 300px)
+  left: calc(50vw - 300px)
+
+  .content
+    background: $popup-background
+    padding: 0 15px 15px 15px
+
+    input.search
+      margin: 10px 0
+
+    ul.complex
+      height: 350px
+      overflow: hidden
+
+      li
+        background: $block-color
+        font-size: 0.8rem
+        margin-top: 1px
+        padding: 3px 10px
+        cursor: pointer
+
+        &:hover
+          background: $highlighted-block-color

@@ -1,0 +1,16 @@
+.widget
+  border: 1px solid $border-color
+
+  &.grow
+    flex-grow: 1
+
+  .title
+    padding: 5px 10px
+    background: $highlighted-block-color
+    font-size: 0.8rem
+    border-bottom: 2px solid $border-color
+
+  .content
+    +growFlexColumn()
+    padding: 10px
+    justify-content: space-between

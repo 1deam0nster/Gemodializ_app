@@ -1,0 +1,84 @@
+.quality
+    .left-bar
+        .filters
+            ul.tabs
+                li.tab-title.active
+                    a Пациенты
+                li.tab-title
+                    a Врачи
+                li.tab-title
+                    a.checkbox
+                        span.fa.fa-square-o
+                        span Только свои пациенты
+
+            input.search( placeholder = "Поиск..." )
+
+        ul.patients-list
+            - for( var i = 0; i < 40; ++i)
+                li
+                    span Плетнёв Игорь Михайлович
+                    span.fa.fa-square-o
+
+    .content
+        .measure-switch
+            ul.tabs
+                li.tab-title.active
+                    a Индекс диализной дозы (Kt/V)
+
+                li.tab-title
+                    a Скорость кровотока (FQb)
+
+                li.tab-title
+                    a Время процедуры (Ft)
+
+                li.tab-title
+                    a Уровень гемоглобина (Ft)
+
+                li.tab-title
+                    a Процедуры с гипо-гипертензией
+
+                li.tab-title
+                    a Гипо-гипертензия на CHECK-IN
+
+                li.tab-title
+                    a Кальций-фосфорный обмен
+
+        .graphs
+            .scale
+            .graph-content
+                .filters
+                    ul.rate-switch.button-group
+                        li.active
+                            a.button 1м
+
+                        li
+                            a.button 3м
+
+                        li
+                            a.button 6м
+
+                        li
+                            a.button Всё
+
+                    .checkboxes
+                        div
+                            span.fa.fa-square-o
+                            span Заливка границ
+                        div
+                            span.fa.fa-square-o
+                            span Отображать линии тренда
+                        div
+                            span.fa.fa-square-o
+                            span Учитывать индекс достоверности
+
+                    ul.range-switch.button-group
+                        li.active
+                            a.button День
+
+                        li
+                            a.button Неделя
+
+                        li
+                            a.button Месяц
+script.
+    $("ul.patients-list").mCustomScrollbar({theme: "minimal"});

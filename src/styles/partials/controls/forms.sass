@@ -1,0 +1,118 @@
+.row
+  +flexRow
+  margin-bottom: 10px
+  max-width: none
+
+  .row + .row
+    margin-top: 10px
+
+  .title
+    font-size: 1rem
+    margin-left: 15px
+
+
+  .column-block + .column-block
+    margin-left: 20px
+
+  ul.tabs
+    li
+      height: 30px
+
+  span + .fa-info-circle
+    margin-left: 10px
+
+  label
+    +verticalCenteredText
+    width: 160px
+    padding-left: 15px
+
+    &.small
+      font-size: 0.7rem
+      font-style: italic
+
+    &.full-width
+      width: 100%
+      margin-top: 20px
+
+  .label-big
+    width: 210px
+
+    &.vertical-centered
+      align-self: center
+
+    &.right
+      text-align: right
+
+    a
+      border-bottom: 1px dashed $border-color
+
+  .info
+    width: 460px
+    margin-left: 15px
+
+    .type
+      color: $border-color
+      margin-top: 5px
+
+  select, input, .button
+    width: 300px
+
+  .datetime
+    +flexRow
+    width: 300px
+
+    input
+      width: 240px
+
+    .button
+      width: 30px
+
+  table.measures
+    width: 675px
+
+    td, th
+      height: 1rem
+      padding: 4px
+
+      .fa-long-arrow-down, .fa-long-arrow-up
+        margin-right: 5px
+
+    input
+      width: 90px
+      text-align: center
+
+  table.nosologies
+    width: 675px
+
+    td, th
+      height: 1rem
+      padding: 4px
+
+      select, input
+        width: 200px
+
+      .fa-info-circle
+        margin-left: 15px
+
+  table.form
+    td, th
+      height: 1rem
+      padding: 5px
+
+      &:last-child
+        padding-right: 0 !important
+
+  table.appointments
+    width: 800px
+    .group
+      font-size: 1rem
+
+      .fa-info-circle
+        font-size: 0.8rem
+        margin-left: 10px
+
+    a
+      border-bottom: 1px dashed $border-color
+
+.row + .row
+  margin-top: 10px

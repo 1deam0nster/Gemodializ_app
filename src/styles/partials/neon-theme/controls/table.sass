@@ -1,0 +1,26 @@
+table
+  background: transparent
+  width: 100%
+  border-spacing: 1px 1px
+
+  &.row-separated
+    border-spacing: 0px 1px
+
+  thead
+    text-shadow: 1px 1px #000
+
+    tr th
+      height: 4em
+      text-align: center
+      background: $block-color
+      font-weight: 300
+      color: #fff
+      border: 0
+
+  tbody
+    tr td
+      background: $block-color
+      text-shadow: 1px 1px #000
+      font-weight: 300
+      border: 1px solid $table-border-color
+      text-align: center

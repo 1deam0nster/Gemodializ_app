@@ -1,0 +1,65 @@
+.documents-archive-popup.popup
+    .title
+        p Архив документов (Шалин П.П, ОНГ Борисоглебск)
+
+    .content
+        .documents-list
+            .filters
+                input.date
+                input.search(placeholder = "Поиск")
+
+            table
+                thead
+                    tr
+                        th Дата
+                        th Документ
+
+                tbody
+                    tr
+                        td 28.11.2015
+                        td Нативная артериовенозная фистула
+
+                    tr
+                        td 28.11.2015
+                        td Нативная артериовенозная фистула
+
+                    tr
+                        td 28.11.2015
+                        td Нативная артериовенозная фистула
+
+                    - for( var i = 0; i < 10; ++i )
+                        tr
+                            td
+                            td
+
+        .document-content
+            .row-block
+                p Название документа*
+                input(value = "Выписной эпикриз")
+
+            .file-item
+                .file-icon
+                    img(src = "i/content/file-icon.jpg")
+
+                .file-info
+                    p Файл: выписной_шалин.pdf
+                    textarea(placeholder = "Описание...")
+                    .button Скачать
+
+            .file-item
+                .file-icon
+                    img(src = "i/content/file-icon.jpg")
+
+                .file-info
+                    p Файл: выписной_шалин.pdf
+                    textarea(placeholder = "Описание...")
+                    .button Скачать
+
+    .actions
+        .left
+            .button Удалить
+            .button Добавить
+
+        .right
+            .button Редактировать
+            .button.close-popup Отмена

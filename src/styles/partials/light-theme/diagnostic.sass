@@ -1,0 +1,37 @@
+.diagnostic
+
+  .toolbar
+    border: 1px solid $border-color
+
+    .filter
+      .item
+        .checkbox
+          font-size: 1.2rem
+          color: $font-color
+  .diagnostic-content
+
+    .indications, .nosologies, .recommend-to-check
+      border: 1px solid $border-color
+
+    .diagnostic-workspace
+      +growFlexColumn
+
+      .viewport
+        border: 1px solid $border-color
+
+        .sphere-content
+          .options
+
+            .block
+              border: 1px solid $border-color
+
+              &:last-child
+                border: 0
+
+        .psmp-content
+          +growFlexColumn
+
+          .filter-bar
+
+            .column-block:last-child
+              border: 1px solid $border-color

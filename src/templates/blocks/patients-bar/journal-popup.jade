@@ -1,0 +1,46 @@
+.journal-popup.popup
+    .title
+        p Журнал эпизодов лечения
+        .switcher
+            .button.active Все эпизоды
+            .button Амбулатория
+            .button Стационар
+    .content
+
+        table
+            thead
+                tr
+                    th Дата поступления
+                    th Дата выписки
+                    th № амб. карты
+                    th Лечащий врач
+                    th Исход госпитализации
+                    th Результат госпитализации
+
+            tbody
+                tr
+                    td 28.11.2015
+                    td
+                    td 10064
+                    td Винокуров П.А.
+                    td
+                    td
+
+                - for( var i = 0; i < 15; ++i )
+                    tr
+                        td
+                        td
+                        td
+                        td
+                        td
+                        td
+
+
+    .actions
+        .left
+            .button Редактировать
+            .button Новый эпизод лечения
+            .button Закрыть эпизод лечения
+
+        .right
+            .button.close-popup Закрыть

@@ -1,0 +1,119 @@
+.mainpage
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  margin: -20px -10px
+  justify-content: space-between
+
+  ul.main-menu
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    list-style: none
+    margin: 0
+    justify-content: space-around
+
+    a
+      height: 220px
+      //background: url('../i/design/neon/mainpage-item-bg.png')center no-repeat
+      color: #fff
+      text-align: center
+      flex: 0 0 300px
+      margin: 10px 0px 60px 0px
+      padding: 15px
+      cursor: pointer
+      transition: all 1s
+
+      &::before
+        content: ""
+        width: 275px
+        height: 230px
+        display: block
+        position: absolute
+        background: url('../i/design/neon/mainpage-item-bg-small.png')center no-repeat, url('../i/design/neon/mainpage-item-bg-smooth.png')center no-repeat
+        animation-duration: 60s
+        animation-iteration-count: infinite
+        animation-name: rotation
+        animation-timing-function: linear
+
+      &::after
+        content: ""
+        width: 275px
+        height: 230px
+        display: block
+        position: absolute
+        margin: -264px 0 0 0px
+        background: url('../i/design/neon/mainpage-item-bg-big.png')center no-repeat
+        animation-duration: 30s
+        animation-iteration-count: infinite
+        animation-name: rotation-reverse
+        animation-timing-function: linear
+
+      p
+        font-size: 1.1em
+        text-shadow: 0px 0px 5px rgba(255,255,255, 0.7)
+        margin: 0
+
+      img
+        height: 120px
+        margin: 50px 0 65px 0
+
+      &:hover
+        p
+          text-shadow: 0px 0px 7px rgba(255,255,255, 0.9)
+
+  .top-plat, .bottom-plat
+    animation-delay: 0.8s
+
+  .top-plat
+    display: flex
+    flex-direction: row
+    background-position: bottom
+    flex: 0 0 72px
+    justify-content: space-between
+
+    .left-corner
+      background: url('../i/design/neon/top-plat-left.png') left top no-repeat
+      flex: 0 0 40px
+      height: 72px
+
+    .center
+      background: url('../i/design/neon/plat-bg.png') bottom repeat
+      flex-grow: 1
+
+    .right-corner
+      background: url('../i/design/neon/top-plat-right.png') right top no-repeat
+      flex: 0 0 40px
+      height: 72px
+
+  .bottom-plat
+    display: flex
+    flex-direction: row
+    flex: 0 0 78px
+    justify-content: space-between
+
+    .left-corner
+      background: url('../i/design/neon/bottom-plat-left.png') left top no-repeat
+      flex: 0 0 40px
+      height: 78px
+
+    .center
+      background: url('../i/design/neon/plat-bg.png') top repeat
+      flex-grow: 1
+
+    .right-corner
+      background: url('../i/design/neon/bottom-plat-right.png') right top no-repeat
+      flex: 0 0 40px
+      height: 78px
+
+@keyframes rotation
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+@keyframes rotation-reverse
+  0%
+    transform: rotate(360deg)
+  100%
+    transform: rotate(0deg)

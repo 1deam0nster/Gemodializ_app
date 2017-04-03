@@ -1,0 +1,63 @@
+mixin couchBlock(patientName, patientPhotoSrc, warningInfo, alertedSummary, hardcodeNumber)
+    a(href = "patient-graph.html").couch
+        .base-info
+            img(src= patientPhotoSrc).patient-avatar
+            .base-info-block
+                .main-info-block
+                    .position 05
+                    .name-block
+                        .name= patientName
+                        .age 55 лет
+
+                .block-row
+                    span Ni-SX 07 - Терапия
+                    span 14:05
+
+                .block-row
+                    span Кондратьева В.И. 14:05 - 14:05
+                    span МсГ
+
+        table.additional-info
+            thead
+                tr
+                    th Qb
+                    th Kt/V
+                    th Cnd/DNa
+                    th UF
+                    th T
+                    th Вес
+
+            tbody
+                tr
+                    td 300
+                    td 0
+                    td 14.7
+                    td 0.009
+                    td 04:10
+                    td 81.3
+                tr.previous
+                    td 330
+                    td 1.4
+                    td 14.2
+                    td 3.8
+                    td 04:10
+                    td 77.5
+
+        table.additional-info
+            thead
+                tr
+                    th САД
+                    th ДАД
+                    th ЧСС
+                    th ABP
+                    th VBP
+
+            tbody
+                tr
+                    td 111
+                    td 71
+                    td 72
+                    td(class= alertedSummary == true ? "alert" : "")= hardcodeNumber
+                    td 180
+
+        .warning-info(class= alertedSummary == true ? "alert" : "")= warningInfo

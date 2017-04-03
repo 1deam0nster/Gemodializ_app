@@ -1,0 +1,58 @@
+.ckd-phase-journal
+    .header
+        .left
+            ul.tabs
+                li.tab-title.open-ckd-phase
+                    a Диагностика ХБП
+
+                li.tab-title.active
+                    a Журнал стадий ХБП
+
+        .right
+            .button.open-ckd-phase-popup Добавить стадию
+            .button.open-ckd-phase-popup Просмотр/Редактирование
+            .button Удалить стадию
+
+    .reception-form-content
+        .row
+            table.form
+                thead
+                    tr
+                        th Стадия ХБП
+                        th Дата диагностирования
+                        th Дата завершения стадии
+                        th Автор
+
+                tbody
+                    tr
+                        td 1 стадия
+                        td 24.03.2016
+                        td 25.03.2016
+                        td null
+
+                    tr
+                        td 5д стадия
+                        td 1.06.2012
+                        td 23.03.2016
+                        td null
+
+                    tr
+                        td 5д стадия
+                        td 24.03.2016
+                        td 24.03.2016
+                        td null
+
+        .row
+            .checkbox-wrapper
+                .checkbox
+                    .fa.fa-square-o
+                span Показать привязанные к приёму
+
+            .checkbox-wrapper
+                .checkbox
+                    .fa.fa-square-o
+                span Отображать историю изменения стадий
+
+        .row-block
+            img(src = 'i/content/ckd-journal.png')
+

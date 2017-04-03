@@ -1,0 +1,30 @@
+.check-diagnosis-popup
+  display: none
+  width: 1000px
+  height: 540px
+  top: calc(50vh - 270px)
+  left: calc(50vw - 500px)
+
+  .content
+    background: $popup-background
+
+    table
+      tr
+
+        &.confirmed
+          background: #307570
+
+        &.excluded
+          background: #4a5b6f
+
+        &.skipped
+          background: #5e8264
+
+        td
+          +flexRow
+          +verticalCenteredText
+          justify-content: space-between
+          font-size: 0.8rem
+
+          i
+            margin-left: 10px

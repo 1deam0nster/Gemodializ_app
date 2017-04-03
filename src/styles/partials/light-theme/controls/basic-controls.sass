@@ -1,0 +1,45 @@
+// Selects and Inputs
+select, input, .button, textarea
+  +placeholder-color($font-color)
+  border: 1px solid $border-color
+  background: #f7f7f7
+
+  &:focus
+    border: 1px solid $border-color
+
+input.search
+  background: url("../i/design/light/search.png") no-repeat scroll 100% center, #f7f7f7
+  border: 1px solid $border-color
+
+select, select:focus
+  background: url('../i/design/light/select.png') no-repeat right, #f7f7f7
+  cursor: pointer
+  appearance: none
+  border: 1px solid $border-color
+
+select option
+  background: #f7f7f7
+
+.checkbox
+  .fa.fa-square-o
+    color: $font-color
+
+.button
+  background: #f7f7f7
+  color: $font-color
+
+.spoiler
+  width: 100%
+  background: $base-block-color
+
+  .toggler
+    background: #efeff1
+
+    &:hover
+      background: darken(#efeff1, 5%)
+
+    .fa
+      font-size: 1.2rem
+
+  .content
+    background: #f6f6f8 !important

@@ -1,0 +1,192 @@
+.row
+    .column-block
+        .row
+            .title Данные пациенты
+        .row
+            label Пол*
+            select
+                option Не указан
+                option Женский
+                option Мужской
+                option Не определён
+
+        .row
+            label Дата рождения*
+            .date.large
+                input( value = '08.01.1945' )
+                .button.icon-button
+                    .fa.fa-calendar
+
+        .row
+            label Раса*
+            select
+                option Азиаты
+                option Негроидная
+
+        .row
+            label Рост(см) и вес(кг)*
+            input( value = '120,00' ).middle
+            input( value = '60,85' ).middle
+
+        .row
+            label
+            .checkbox.fa.fa-square-o
+            span Наличие ХБП
+
+    .column-block
+        .row
+            .title Данные исследований
+
+        .row
+            table.form.transparent
+                thead
+                    tr
+                        th
+                        th Значение
+                        th Ед.изм.
+                        th Дата измерения
+
+                tbody
+                    tr
+                        td Креатин*
+                        td
+                            input( value = '267' ).small
+                        td
+                            select.small
+                                option мкмоль/л
+                        td
+                            .datetime
+                                input( value = '08.02.2016 00:00' )
+                                .button.icon-button
+                                    .fa.fa-calendar
+                                .button.icon-button
+                                    .fa.fa-clock-o
+
+                    tr
+                        td Мочевина
+                        td
+                            input( value = '267' ).small
+                        td
+                            select.small
+                                option мкмоль/л
+                        td
+                            .datetime
+                                input( value = '08.02.2016 00:00' )
+                                .button.icon-button
+                                    .fa.fa-calendar
+                                .button.icon-button
+                                    .fa.fa-clock-o
+
+                    tr
+                        td Альбумин
+                        td
+                            input( value = '267' ).small
+                        td
+                            select.small
+                                option г/л
+                        td
+                            .datetime
+                                input( value = '08.02.2016 00:00' )
+                                .button.icon-button
+                                    .fa.fa-calendar
+                                .button.icon-button
+                                    .fa.fa-clock-o
+
+        .row-block
+            .button.pull-right
+                .fa.fa-plus
+                span Ввести новые результаты исследований
+
+.row
+    .title Результаты расчёта
+
+.row
+    table
+        thead
+            tr
+                th Метод расчёта
+                th Расчитанная СКФ
+                th Стадия ХБП, соответствующая СКФ
+
+        tbody
+            tr
+                td CKD-EPI
+                td 16
+                td 4
+
+            tr
+                td MDRD
+                td
+                    span Не применима
+                    .fa.fa-info-circle
+                td
+
+            tr
+                td MDRD (расширенный)
+                td
+                    span Не применима
+                    .fa.fa-info-circle
+                td
+
+            tr
+                td Кокрофт-Голт
+                td
+                    span Не применима
+                    .fa.fa-info-circle
+                td
+
+            tr
+                td BEDSIDE SCHWARTZ
+                td
+                    span Не применима
+                    .fa.fa-info-circle
+                td
+
+            tr
+                td COUNAHAN-BARRATT
+                td
+                    span Не применима
+                    .fa.fa-info-circle
+                td
+
+            tr
+                td BIS1
+                td 20
+                td 4
+
+.row
+    .column-block
+        .row
+            label Стадия ХБП*
+            select.middle
+                option 1 стадия
+                option 2 стадия
+                option 3 стадия
+
+
+    .column-block
+        .row
+            label Дата диагностирования*
+            .date
+                input( value = '24.03.2016' ).middle
+                .button.icon-button
+                    .fa.fa-calendar
+
+
+
+    .column-block
+        .row
+            label Дата завершения стадии*
+            .date
+                input( value = '' ).middle
+                .button.icon-button
+                    .fa.fa-calendar
+
+
+.row
+    label.small.full-width В случае несогласия со стадией ХБП, рассчитанной на основе результатов лабораторных исследования по методу CKD-EPI и занесенной в таблицу "Результаты исследования", выберите причину из расположенного ниже списка.
+
+.row
+    label Причина постановки стадии ХБП
+    select
+        option Не указана

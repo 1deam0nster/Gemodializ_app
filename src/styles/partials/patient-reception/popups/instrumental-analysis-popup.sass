@@ -1,0 +1,32 @@
+.instrumental-analysis-popup
+  width: 600px
+  height: 600px
+  top: calc(50vh - 300px)
+  left: calc(50vw - 300px)
+
+  .content
+    padding: 15px
+    background: $popup-background
+
+    p
+      margin-bottom: 5px
+
+    .row + .row
+      margin-top: 10px
+
+
+    textarea
+      height: 100px
+
+    a
+      color: $font-color
+      border-bottom: 1px dashed $font-color
+
+      &:hover
+        border-bottom-style: solid
+
+    a + a
+      margin-left: 10px
+
+    .attachment-actions
+      margin-top: 20px

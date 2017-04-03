@@ -1,0 +1,220 @@
+@import "common"
+@import "popups/laboratory-analysis-popup"
+@import "popups/instrumental-analysis-popup"
+@import "popups/upload-attachment-popup"
+@import "popups/diagnoses-popup"
+@import "popups/ckd-phase-popup"
+
+.current-patient-reception
+  +growFlexColumn
+  //+fullHeightBlock
+  display: none
+  width: 100%
+
+  .header
+    height: 60px
+    font-size: 0.9rem
+
+    .left, .right
+      +flexRow
+
+      .button + .button
+        margin-left: 5px
+
+    .button, .tabs
+      height: 30px
+
+  .reception-content
+    +growFlexRow
+
+    .menu-list-bar
+      +flexColumn
+      width: 240px
+      margin-right: 1px
+
+      ul
+        list-style: none
+        margin: 0
+
+      ul.menu-list
+        li
+          +growFlexRow
+          height: 50px
+          align-items: center
+          padding: 0 4px 0 5px
+          background: $block-color
+          font-weight: 300
+          margin-bottom: 1px
+          cursor: pointer
+
+          &:first-child
+            margin-top: 1px
+
+          &.active, &:hover
+            background: $highlighted-block-color
+
+          .bage
+            width: 20px
+            height: 20px
+            padding: 1px 5px
+            margin-right: 10px
+            margin-left: 5px
+            background: $border-color
+            border-radius: 50%
+            text-align: center
+
+        ul.submenu-list
+          li
+            height: 30px
+            font-size: 0.75rem
+            font-style: italic
+            padding-left: 40px
+
+    .reception-form
+      +growFlexColumn
+
+      .reception-form-content
+        +growFlexColumn
+        height: calc(100vh - 191px)
+        background: $block-color
+        margin-top: 1px
+        padding: 10px
+
+        //.row
+        //  +flexRow
+        //  margin-bottom: 10px
+        //
+        //  .title
+        //    font-size: 1rem
+        //    margin-left: 15px
+        //
+        //
+        //  .column-block + .column-block
+        //    margin-left: 20px
+        //
+        //  ul.tabs
+        //    li
+        //      height: 30px
+        //
+        //  span + .fa-info-circle
+        //    margin-left: 10px
+        //
+        //  label
+        //    +verticalCenteredText
+        //    width: 160px
+        //    padding-left: 15px
+        //
+        //    &.small
+        //      font-size: 0.7rem
+        //      font-style: italic
+        //
+        //    &.full-width
+        //      width: 100%
+        //      margin-top: 20px
+        //
+        //  .label-big
+        //    width: 210px
+        //
+        //    &.vertical-centered
+        //      align-self: center
+        //
+        //    &.right
+        //      text-align: right
+        //
+        //    a
+        //      border-bottom: 1px dashed $border-color
+        //
+        //  .info
+        //    width: 460px
+        //    margin-left: 15px
+        //
+        //    .type
+        //      color: $border-color
+        //      margin-top: 5px
+        //
+        //  select, input, .button
+        //    width: 300px
+        //
+        //  .datetime
+        //    +flexRow
+        //    width: 300px
+        //
+        //    input
+        //      width: 240px
+        //
+        //    .button
+        //      width: 30px
+        //
+        //  table.measures
+        //    width: 675px
+        //
+        //    td, th
+        //      height: 1rem
+        //      padding: 4px
+        //
+        //      .fa-long-arrow-down, .fa-long-arrow-up
+        //        margin-right: 5px
+        //
+        //    input
+        //      width: 90px
+        //      text-align: center
+        //
+        //  table.nosologies
+        //    width: 675px
+        //
+        //    td, th
+        //      height: 1rem
+        //      padding: 4px
+        //
+        //      select, input
+        //        width: 200px
+        //
+        //      .fa-info-circle
+        //        margin-left: 15px
+        //
+        //  table.form
+        //    td, th
+        //      height: 1rem
+        //      padding: 5px
+        //
+        //      &:last-child
+        //        padding-right: 0 !important
+        //
+        //  table.appointments
+        //    width: 800px
+        //    .group
+        //      font-size: 1rem
+        //
+        //      .fa-info-circle
+        //        font-size: 0.8rem
+        //        margin-left: 10px
+        //
+        //    a
+        //      border-bottom: 1px dashed $border-color
+
+
+
+      .step
+        padding: 10px 0 45px 0
+
+
+        .title
+          font-size: 1rem
+          border-bottom: 1px solid $font-color
+          padding: 0px 0 5px 0
+          margin-bottom: 30px
+
+  .reception-actions
+    +flexRow
+    +verticalCenteredText
+    justify-content: space-between
+    height: 60px
+    padding: 10px
+    background: $block-color
+    margin-top: 1px
+
+    .left, .right
+      +flexRow
+
+      .button + .button
+        margin-left: 10px

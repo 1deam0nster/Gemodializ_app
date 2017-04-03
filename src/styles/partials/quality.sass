@@ -1,0 +1,96 @@
+.quality
+  +growFlexRow
+
+  .left-bar
+    width: 420px
+    flex-grow: 0
+    flex-shrink: 0
+
+    .filters
+      padding: 10px
+      background: $block-color
+
+      ul.tabs li
+        height: 30px
+
+        a.checkbox
+          +flexRow
+          +verticalCenteredText
+          justify-content: center
+
+        .fa.fa-square-o
+          margin-right: 10px
+          font-size: 1.2rem
+
+      input.search
+        margin-top: 10px
+        width: 100%
+
+    ul.patients-list
+      list-style: none
+      margin: 0
+      overflow: hidden
+      height: calc(100vh - 160px)
+
+      li
+        +verticalCenteredText
+        justify-content: space-between
+        padding: 0 20px
+        margin-top: 1px
+        background: $block-color
+        height: 30px
+
+        &:hover
+          background: $highlighted-block-color
+          cursor: pointer
+
+        span.fa.fa-square-o
+          font-size: 1.2rem
+
+  .content
+    +growFlexColumn
+    padding: 10px
+
+    .measure-switch
+      ul.tabs
+        li.active
+          border-bottom: 2px solid $border-color
+
+    .graphs
+      +growFlexColumn
+      padding: 30px 25px 0 60px
+      margin-top: 10px
+      background: $block-color url('../i/content/doctor-quality-graph.png') no-repeat
+      background-size: contain
+
+      .filters
+        +flexRow
+        justify-content: space-between
+
+        .rate-switch, .range-switch, .checkboxes
+          +flexRow
+          +verticalCenteredText
+
+          li
+            .button
+              background: $popup-button-background
+
+            &.active, &:hover
+              .button
+                color: $font-color
+                background: $popup-button-background-active
+
+        .checkboxes
+          div
+            +verticalCenteredText
+            cursor: pointer
+            margin: 0 30px
+
+          span.fa.fa-square-o
+            margin-right: 10px
+            font-size: 1.2rem
+
+
+
+      .graph-content
+        +growFlexColumn

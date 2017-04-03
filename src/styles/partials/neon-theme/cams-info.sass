@@ -1,0 +1,76 @@
+.cams-info-content
+
+  .info-wrapper
+    background: $block-color
+
+    .camera-block
+      .title
+        background: $highlighted-block-color
+        border-bottom: 2px solid $border-color
+        color: #fff
+
+      .couch, .checkin-block, .checkin-process-block, .empty-block, .water-treatment, .hospital-block
+        background: transparent
+
+      .checkin-block, .water-treatment
+        .title
+          background: $block-color
+
+      .couch, .checkin-process-block, .hospital-block
+        .position, .name-block, .block-row, .warning-info
+          background: $block-color
+
+      .couch:hover
+        background: $highlighted-block-color
+
+      .couch
+        .warning-info
+          height: 17px
+          color: $warning-font-color
+
+          &.alert
+            color: $alert-font-color
+            font-weight: bold
+
+      .checkin-process-block, .hospital-block
+        .checkin-data
+          .right-side
+            .block-row
+              span:first-child
+                color: #878889
+                font-weight: 300
+
+        .warning-info
+          p.grey
+            color: #878889
+
+      table.additional-info, table.checkin-table, .water-treatment-table
+        border-collapse: separate
+        border-spacing: 2px
+        background-color: transparent
+
+        thead tr th,
+        tbody tr td
+          background: $block-color
+          text-shadow: none
+
+          &.alert
+            color: $warning-font-color
+            font-weight: normal
+
+        thead tr th
+          border-bottom: 2px solid $border-color
+
+        tbody tr.previous
+          td
+            color: #878889
+            font-weight: 300
+
+      table.checkin-table
+        thead tr, tbody tr
+          td:first-child
+            background: $highlighted-block-color
+
+          th:first-child
+            background: transparent
+            border-bottom: 0

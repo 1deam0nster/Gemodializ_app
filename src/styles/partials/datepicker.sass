@@ -1,0 +1,65 @@
+#ui-datepicker-div
+  display: none
+.ui-datepicker
+  background: linear-gradient(0deg, #183e53, #1a5271)
+  padding: 15px 15px 0px 15px
+  border-radius: $border-radius
+
+  .ui-datepicker-header
+    padding: 0 10px
+
+    .ui-datepicker-prev
+      float: left
+
+      &::before
+        content: ""
+        background: url("../i/design/neon/datepicker-prev.png")
+        display: block
+        width: 25px
+        height: 25px
+        margin-top: 3px
+
+      span
+        display: none
+
+    .ui-datepicker-next
+      float: right
+
+      &::before
+        content: ""
+        background: url("../i/design/neon/datepicker-next.png")
+        display: block
+        width: 25px
+        height: 25px
+        margin-top: 3px
+
+
+      span
+        display: none
+
+    .ui-datepicker-title
+      text-align: center
+      margin-left: 1em
+      color: #fff
+      font-size: 1.3em
+
+  .ui-datepicker-calendar
+    background: transparent
+    margin-top: 1em
+    border: 0
+
+    thead
+      background: transparent
+
+      th
+        height: 1em
+        padding: 0
+
+    td
+      text-align: center
+
+    .ui-datepicker-current-day
+      background: rgba(255, 255, 255, 0.1)
+
+    .ui-state-default
+      color: #fff

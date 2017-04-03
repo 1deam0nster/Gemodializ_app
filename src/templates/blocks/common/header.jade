@@ -1,0 +1,158 @@
+.header-shadow.animated.slideInDown
+#header.animated.slideInDown
+    .logo
+        img(src='i/design/logo.png')
+
+    ul.main-menu
+        a(href = "summary-info.html", ajax-target=".workspace-content-block")
+            li Сводная информация
+
+        li.separator
+        a(href = "patient-reception.html", ajax-target=".workspace-content-block")
+            li Приёмы
+
+        li.separator
+        li.ldp-analysis-btn
+            a Анализ ЛДП
+            span.menu-expander
+                .fa.fa-angle-down
+            .ldp-analysis-menu.header-menu
+                ul
+                    a(href = "#")
+                        li Отчёты по контролю ЛДП
+                    a(href = "diagnostic.html")
+                        li Подсистема диагностики
+                    a(href = "quality.html")
+                        li Показатели качества лечения пациентов
+
+
+        li.separator
+        a(href = "cams-info.html", ajax-target=".workspace-content-block")
+            li Схема отделения
+
+        li.separator
+        a(href = "shedule.html", ajax-target=".workspace-content-block")
+            li Расписание
+
+    //ul.main-menu
+        li.divisions-btn
+            a(href = "#") Воронежская область: Россошь
+            span.menu-expander &#x25BC;
+            .divisions-content
+                ul.divisions
+                    li( data-division = 0 ).current Воронежская область
+                    li( data-division = 1 )  Ивановская область
+                    li( data-division = 2 )  Кемеровская область
+                    li( data-division = 3 )  Кировская область
+                    li( data-division = 4 )  Костромская область
+                    li( data-division = 5 )  Ленинградская область
+                    li( data-division = 6 )  Омская область
+                    li( data-division = 7 )  Тюменская область
+                    li( data-division = 8 ) Ханты-Манскийский АО-Югра
+
+                ul( data-division = 0 ).division-submenu.current
+                    li Борисоглебск
+                    li Воронеж №10
+                    li Воронеж ОКБ
+                    li.current Россошь
+
+                ul( data-division = 1 ).division-submenu
+                    li Иваново
+                    li Кинешма
+
+                ul( data-division = 2 ).division-submenu
+                    li Белово
+                    li Кемерово
+                    li Новокузнецк
+
+                ul( data-division = 3 ).division-submenu
+                    li Киров
+                    li Слободской
+
+                ul( data-division = 4 ).division-submenu
+                    li Галич
+                    li Кострома
+                    li Шарья
+
+                ul( data-division = 5 ).division-submenu
+                    li Гатчина
+
+                ul( data-division = 6 ).division-submenu
+                    li Омск
+
+                ul( data-division = 7 ).division-submenu
+                    li Ишим
+                    li Патрушева
+                    li Тобольск
+                    li Тюмень
+
+                ul( data-division = 8 ).division-submenu
+                    li Нефтеюганск
+
+        li.separator
+        li.summary-table-btn
+            a(href = "#") Сводная таблица
+            span.menu-expander &#x25BC;
+            .summary-table-menu.header-menu
+                ul
+                    a(href = "temperature.html")
+                        li Температура и влажность
+                    a(href = "water-treatment.html")
+                        li Водоподготовка
+                    a(href = "power-consumption.html")
+                        li Энергопотребление
+                    a(href = "summary-table.html")
+                        li Вся таблица
+
+        li.separator
+        a(href = "cams.html")
+            li Схема отделения
+
+        li.separator
+        a(href = "cams-video.html")
+            li Видео
+
+        li.separator
+        a(href = "#")
+            li Кабинет врача
+
+        li.separator
+        a(href = "softphone.html")
+            li Soft-phone
+
+    .account
+        .account-menu
+            .avatar
+                .image
+
+            .username Герасимов И.С.
+        .separator
+        .options
+            span.icon.icon-gear
+            .options-menu
+                .title Настройки
+                a(href = "control-panel.html").menu-button Панель управления
+                a(href = "#").menu-button Разрешить всплывающие окна
+                a(href = "#").menu-button Выключить звук
+
+                .title EVA
+                input(type = "text", value = "ExalisAnaliser_Gatchina_MX_2015.07.18").eva-input
+
+                .title Операции с ID-картами
+                .menu-row
+                    a(href = "#").menu-button Привязать
+                    a(href = "#").menu-button Отвязать
+
+                .title Загрузить Maximus Web Driver
+                .menu-row
+                    a(href = "#").menu-button x32
+                    a(href = "#").menu-button x64
+
+                .title Язык интерфейса
+                .lang
+                    .rus Рус.
+                    .eng.active Англ.
+        .separator
+        .signout
+            span.icon.icon-switch
+        //.test-exit-image

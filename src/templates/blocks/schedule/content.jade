@@ -1,0 +1,86 @@
+.schedule
+    .toolbar
+        .period
+            span Период:
+            .button
+                .prev-period.fa.fa-chevron-left
+            input.current-period(value = '21 сентября 2015г - 27 сентября 2015г' )
+            .button
+                .next-period.fa.fa-chevron-right
+
+        .zoom
+            span Масштаб:
+
+            ul.tabs
+                li.tab-title.active
+                    a День
+
+                li.tab-title
+                    a Неделя
+
+        .specialization
+            span Специальность:
+            select
+                option Врач-нефролог
+
+        .status
+            span Статус записи:
+            select
+                option Все
+                option Подтверждена
+                option Не подтверждена
+
+        .view-mode
+            span Режим:
+            ul.tabs
+                li.tab-title.active
+                    a График
+
+                li.tab-title
+                    a Список
+
+    .schedule-content
+        .patients-list
+            .button
+                .checkbox.fa.fa-square-o
+                span Показать записи всех врачей
+
+            ul.list
+                - for( var j = 0; j < 20; ++j )
+                    - var r = Math.floor(Math.random() * 255)
+                    - var g = Math.floor(Math.random() * 255)
+                    - var b = Math.floor(Math.random() * 255)
+                    li
+                        img(src = "i/content/avatar.jpg")
+                        .name Плетнёв Игорь Михайлович
+                        .checkbox-block(style="background: rgba(" + r + "," + g + "," +  b + ",0.15)")
+                            .fa.fa-square-o
+
+
+        .schedule-table
+            table
+                thead
+                    tr
+                        th
+                        th 28.09.2015
+                        th 29.09.2015
+                        th 30.09.2015
+                        th 01.09.2015
+                        th 02.09.2015
+                        th 03.09.2015
+                        th 04.09.2015
+                - for(var i = 8; i <= 20 * 4; ++i)
+                    tr
+                        - if(i % 4 == 0)
+                            td(rowspan=4).timeline= i / 4 + 6 + ':00'
+                        td
+                        td
+                        td
+                        td
+                        td
+                        td
+                        td
+
+
+
+

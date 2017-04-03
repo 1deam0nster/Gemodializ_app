@@ -1,0 +1,36 @@
+.pagination-centered
+  margin-top: 15px
+
+ul.pagination
+  li
+    border: $pagination-items-border
+    padding: 5px 2px
+    height: 2.5em
+    margin-left: 2px
+    background: $pagination-items-bg
+
+    a
+      color: $pagination-active-link-color
+
+      img
+        height: 1.2em
+
+  li.current
+    background: $pagination-active-link-bg
+
+    a
+      background: transparent
+      color: $pagination-active-link-color
+      font-weight: lighter
+
+  li:first-child
+    border-radius: $border-radius 0 0 $border-radius
+
+  li:last-child
+    border-radius: 0 $border-radius $border-radius 0
+
+  li:hover
+    background: $pagination-active-link-bg
+
+    a, a:hover
+      background: transparent

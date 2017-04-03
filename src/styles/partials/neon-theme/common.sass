@@ -1,0 +1,75 @@
+@import "controls/basic-controls"
+@import "controls/table"
+
+body
+  color: $font-color
+
+.mainmenu-button
+  @include controls-style()
+  padding: 0 15px 0 20px
+  color: #fff
+  width: 160px
+  height: 60px
+  display: flex
+  align-items: center
+  cursor: pointer
+  align-self: flex-end
+
+  img
+    margin-right: 10px
+
+.mainmenu-button:hover,
+.multimedia .pagination-centered ul.pagination li:hover,
+.multimedia .filters .multimedia-switch .button:hover
+
+    color: #fff
+    background: linear-gradient(0deg, #1a5271, #183e53) !important
+
+.header-shadow
+  box-shadow: 0 0 30px 5px #000
+  width: 70%
+  left: 50%
+  height: 70px
+  display: block
+  position: absolute
+  margin-left: -35%
+  border-radius: 50%
+  margin-top: -5px
+  z-index: -1
+
+.control-buttons, .control-bar
+  display: flex
+  flex-direction: row
+  background: rgba(255,255,255, 0.16)
+  align-self: stretch
+  justify-content: flex-end
+  height: 50px
+  align-items: center
+
+  .button
+    display: flex
+    padding: 5px 20px 5px 10px
+    margin: 0 10px 0 10px
+    align-self: center
+    align-items: center
+
+    &:last-child
+      margin-right: 10px
+
+    .icon
+      font-size: 2em
+      margin-right: 5px
+
+.group-block
+  background: $block-color
+  padding: 10px
+  margin-bottom: 10px
+  color: #fff
+  font-weight: 300
+
+.fixed-column
+  display: flex
+  flex-direction: column
+  flex-grow: 0
+  flex-shrink: 0
+  margin-right: 10px

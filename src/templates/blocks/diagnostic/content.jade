@@ -1,0 +1,146 @@
+mixin separator
+    .separator
+        .left
+        .split
+        .right
+
+.diagnostic
+    .toolbar
+        .patient-info
+            .name Суворова Любовь Анатольевна
+            .gender Пол:
+                span &nbsp;Ж
+            .age Возраст:
+                span &nbsp;63
+
+        .filter
+            | Область анализа:
+            .item
+                .checkbox.fa.fa-square-o
+                | Жалобы
+            .item
+                .checkbox.fa.fa-square-o
+                | Физикальные
+            .item
+                .checkbox.fa.fa-square-o
+                | Инструментальные
+
+        .actions
+            a(href = "/home.html")
+                .button Закрыть
+
+    .diagnostic-content
+        .indications
+            table.indications-list.row-separated
+                thead
+                    tr
+                        th Название признака
+                        th Вес
+                        th Статус
+
+                tbody
+                - var n = 0
+                while n < 10
+                    -n++
+                    tr
+                        td 5.5.2 Гиперкалиемия
+                        td 9
+                        td +
+            .extender
+
+        +separator
+        .nosologies
+            table.nosologies-list.row-separated
+                thead
+                    tr
+                        th Название нозологии
+                        th Индекс
+
+                tbody
+                - var n = 0
+                while n < 5
+                    -n++
+                    tr
+                        td 5.5.2 Гиперкалиемия
+                        td 0.87(2)
+
+            table.underlying-disease.row-separated
+                thead
+                    tr
+                        th Основное заболевание
+                        th.hold-right
+                            .toggler
+                tbody
+                    tr
+                        td E10 Инсулинозависмый сахарный диабет
+                        td
+                            p 0.41
+                            p (12/29)
+
+            table.complications.row-separated
+                thead
+                    tr
+                        th Осложнение основного заболевания
+                        th.hold-right
+                            .toggler
+
+                tbody
+                    tr
+                        td N18.0 Терминальная стадия поражения почек
+                        td
+                            p 0.41
+                            p (12/29)
+
+                    tr
+                        td D63 Анемия при хронических болезнях, классифицированных в других рубриках
+                        td
+                            p 0.41
+                            p (12/29)
+
+
+            table.comorbidities.row-separated
+                thead
+                    tr
+                        th Сопутствующие заболевания
+                        th.hold-right
+                            .toggler
+
+                tbody
+                    tr
+                        td N11.9 Хронический тубулоинтерстициальный нефрит неуточненный
+                        td
+                            p 0.41
+                            p (12/29)
+
+            .actions
+                .button Сохранить диагноз
+                .button Отмена
+
+            .extender
+
+        +separator
+        .diagnostic-workspace
+            .toolbar
+                a(href = "diagnostic/sphere.html", ajax-target = ".diagnostic-workspace .viewport")
+                    .viewport-switcher.button.active Сфера
+
+                a(href = "diagnostic/psmp.html", ajax-target = ".diagnostic-workspace .viewport")
+                    .viewport-switcher.button ПСМП
+
+                a(href = "diagnostic/treatment-program.html", ajax-target = ".diagnostic-workspace .viewport")
+                    .viewport-switcher.button Программа лечения
+
+            .viewport
+                include sphere
+
+        +separator
+        .recommend-to-check
+            table.nosologies-list.row-separated
+                thead
+                    tr
+                        th Название нозологии
+                        th Вес
+
+                tbody
+
+            .extender

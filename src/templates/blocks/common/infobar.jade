@@ -1,0 +1,56 @@
+.infobar.animated.fadeInRight
+    ul.infobar-list
+        li
+            p.measure-value 10:50
+            p.measure-name 21 апреля
+
+        li
+            p.measure-value 03:55
+            p.measure-name Время процедуры
+            p.offered-label Предписано: 04:00
+
+        li
+            p.measure-value 4.305
+            p.measure-name Объём ультрафильтрации
+            p.offered-label Предписано: 4.305
+
+        li
+            p.measure-value 113
+                span.unit мл/мин
+            p.measure-name Скорость кровотока
+            p.offered-label Предписано: 300
+
+        li
+            p.measure-value 1.48
+                span.unit Kt/V
+            p.measure-name Доза диализа
+            p.offered-label Предписано: 1.3
+
+        li
+            p.measure-value 180/92/57
+            p.measure-name Давление пульс
+
+        li
+            p.measure-value 128
+                span.unit мксм/см
+            p.measure-name Проводимость воды для диализа
+            p.offered-label Предписано: 1.3
+
+
+        li.alarm-button
+            p
+                span.icon.icon-alarm
+                | Экстренный вызов медсестры
+
+
+        li.item-mock &nbsp;
+
+    div.alarm-button-wrapper
+        .device-status Последнее измерение
+        img(src="i/design/neon/alert-btn.png", usemap="#alert-button-map").alarm-button
+        img(src="i/design/neon/alert-btn-pressed.png", usemap="#alert-button-map").alarm-button.pressed
+        map(name="alert-button-map" id="alert-button-map")
+            area(shape="poly" coords="38,0,300,0,300,145,0,145,0,38")
+        //p
+            span.icon.icon-alarm
+            | Экстренный вызов медсестры

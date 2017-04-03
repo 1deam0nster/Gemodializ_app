@@ -1,0 +1,76 @@
+.popup
+  display: none
+  flex-direction: column
+  position: absolute
+  z-index: 10000
+  background: transparent
+
+  // Defaults
+  //width: 700px
+  //height: 540px
+  //top: calc(50vh - 270px)
+  //left: calc(50vw - 350px)
+
+  .button
+    height: 35px
+    background: $popup-button-background
+    margin-right: 1px
+
+    &:hover, &.active
+      background: $popup-button-background-active
+
+    &:last-child
+      margin-right: 0
+
+  .title
+    +growFlexRow
+    justify-content: space-between
+    align-items: center
+    padding: 0 0 0 15px
+    background: $popup-title-background
+    height: 40px
+
+    p
+      margin: 0
+
+
+    .switcher
+      +flexRow
+      padding-right: 5px
+
+  .content
+    +flexColumn
+    //background: $popup-background
+    margin-top: 1px
+    width: 100%
+
+    .title
+      background: $popup-background
+      padding: 0
+
+    .header
+      background: transparent
+      height: 30px
+      padding: 0
+
+    .date, .datetime
+      .button
+        background: $block-color
+        height: 30px
+
+        &:hover
+         background: $highlighted-block-color
+
+
+
+  .actions
+    +growFlexRow
+    justify-content: space-between
+    padding: 15px
+    height: 60px
+    margin-top: 1px
+    align-items: center
+    background: $popup-actions-bar-background
+
+    .left, .right
+      +flexRow

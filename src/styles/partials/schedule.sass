@@ -1,0 +1,95 @@
+.schedule
+  +growFlexColumn
+
+  .toolbar
+    +growFlexRow
+    background: $block-color
+    justify-content: space-between
+    padding: 5px 10px
+
+    .period, .zoom, .specialization, .status, .view-mode
+      +verticalCenteredText
+
+      ul
+        height: 30px
+
+      span
+        margin-right: 10px
+        font-size: 0.8rem
+        white-space: nowrap
+
+    .period
+      input.current-period
+        width: 300px
+        margin: 0 1px
+        text-align: center
+
+      .button
+        width: 40px
+        .prev-period, .next-period
+          font-size: 1.2rem
+
+    .specialization
+      width: 250px
+
+  .schedule-content
+    +growFlexRow
+
+    .patients-list
+      width: 240px
+      margin-top: 1px
+      height: 30px
+
+      .button
+        .checkbox
+          font-size: 1.2rem
+
+        span
+          font-size: 0.7rem
+
+      ul.list
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+          +growFlexRow
+          +verticalCenteredText
+          margin-bottom: 1px
+          height: 50px
+
+          &:first-child
+            margin-top: 1px
+
+          img
+            width: 37px
+            height: 50px
+            margin-right: 1px
+            height: 50px
+
+          .name
+            +verticalCenteredText
+            padding: 0 10px 0 10px
+            font-size: 0.8rem
+            background: $block-color
+            height: 50px
+
+          .checkbox-block
+            +verticalCenteredText
+            font-size: 1.2rem
+            background: $block-color
+            margin-left: 1px
+            height: 50px
+            width: 40px
+            justify-content: center
+
+
+    .schedule-table
+      +growFlexRow
+
+      table
+        th
+          text-align: center
+          height: 30px
+        td.timeline
+          width: 70px

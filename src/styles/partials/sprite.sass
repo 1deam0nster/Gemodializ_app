@@ -1,0 +1,686 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$alert-bg-name: 'alert-bg'
+$alert-bg-x: 794px
+$alert-bg-y: 145px
+$alert-bg-offset-x: -794px
+$alert-bg-offset-y: -145px
+$alert-bg-width: 342px
+$alert-bg-height: 166px
+$alert-bg-total-width: 1261px
+$alert-bg-total-height: 1174px
+$alert-bg-image: '../i/sprite.png'
+$alert-bg: (794px, 145px, -794px, -145px, 342px, 166px, 1261px, 1174px, '../i/sprite.png', 'alert-bg', )
+$alert-btn-pressed-name: 'alert-btn-pressed'
+$alert-btn-pressed-x: 286px
+$alert-btn-pressed-y: 376px
+$alert-btn-pressed-offset-x: -286px
+$alert-btn-pressed-offset-y: -376px
+$alert-btn-pressed-width: 300px
+$alert-btn-pressed-height: 143px
+$alert-btn-pressed-total-width: 1261px
+$alert-btn-pressed-total-height: 1174px
+$alert-btn-pressed-image: '../i/sprite.png'
+$alert-btn-pressed: (286px, 376px, -286px, -376px, 300px, 143px, 1261px, 1174px, '../i/sprite.png', 'alert-btn-pressed', )
+$alert-btn-name: 'alert-btn'
+$alert-btn-x: 586px
+$alert-btn-y: 376px
+$alert-btn-offset-x: -586px
+$alert-btn-offset-y: -376px
+$alert-btn-width: 300px
+$alert-btn-height: 143px
+$alert-btn-total-width: 1261px
+$alert-btn-total-height: 1174px
+$alert-btn-image: '../i/sprite.png'
+$alert-btn: (586px, 376px, -586px, -376px, 300px, 143px, 1261px, 1174px, '../i/sprite.png', 'alert-btn', )
+$back-name: 'back'
+$back-x: 1240px
+$back-y: 743px
+$back-offset-x: -1240px
+$back-offset-y: -743px
+$back-width: 13px
+$back-height: 20px
+$back-total-width: 1261px
+$back-total-height: 1174px
+$back-image: '../i/sprite.png'
+$back: (1240px, 743px, -1240px, -743px, 13px, 20px, 1261px, 1174px, '../i/sprite.png', 'back', )
+$bar-bg-name: 'bar-bg'
+$bar-bg-x: 1260px
+$bar-bg-y: 680px
+$bar-bg-offset-x: -1260px
+$bar-bg-offset-y: -680px
+$bar-bg-width: 1px
+$bar-bg-height: 2px
+$bar-bg-total-width: 1261px
+$bar-bg-total-height: 1174px
+$bar-bg-image: '../i/sprite.png'
+$bar-bg: (1260px, 680px, -1260px, -680px, 1px, 2px, 1261px, 1174px, '../i/sprite.png', 'bar-bg', )
+$bg-name: 'bg'
+$bg-x: 1240px
+$bg-y: 704px
+$bg-offset-x: -1240px
+$bg-offset-y: -704px
+$bg-width: 21px
+$bg-height: 19px
+$bg-total-width: 1261px
+$bg-total-height: 1174px
+$bg-image: '../i/sprite.png'
+$bg: (1240px, 704px, -1240px, -704px, 21px, 19px, 1261px, 1174px, '../i/sprite.png', 'bg', )
+$big-no-button-name: 'big-no-button'
+$big-no-button-x: 102px
+$big-no-button-y: 786px
+$big-no-button-offset-x: -102px
+$big-no-button-offset-y: -786px
+$big-no-button-width: 102px
+$big-no-button-height: 102px
+$big-no-button-total-width: 1261px
+$big-no-button-total-height: 1174px
+$big-no-button-image: '../i/sprite.png'
+$big-no-button: (102px, 786px, -102px, -786px, 102px, 102px, 1261px, 1174px, '../i/sprite.png', 'big-no-button', )
+$big-ok-button-name: 'big-ok-button'
+$big-ok-button-x: 0px
+$big-ok-button-y: 786px
+$big-ok-button-offset-x: 0px
+$big-ok-button-offset-y: -786px
+$big-ok-button-width: 102px
+$big-ok-button-height: 102px
+$big-ok-button-total-width: 1261px
+$big-ok-button-total-height: 1174px
+$big-ok-button-image: '../i/sprite.png'
+$big-ok-button: (0px, 786px, 0px, -786px, 102px, 102px, 1261px, 1174px, '../i/sprite.png', 'big-ok-button', )
+$bottom-plat-left-name: 'bottom-plat-left'
+$bottom-plat-left-x: 0px
+$bottom-plat-left-y: 888px
+$bottom-plat-left-offset-x: 0px
+$bottom-plat-left-offset-y: -888px
+$bottom-plat-left-width: 42px
+$bottom-plat-left-height: 143px
+$bottom-plat-left-total-width: 1261px
+$bottom-plat-left-total-height: 1174px
+$bottom-plat-left-image: '../i/sprite.png'
+$bottom-plat-left: (0px, 888px, 0px, -888px, 42px, 143px, 1261px, 1174px, '../i/sprite.png', 'bottom-plat-left', )
+$bottom-plat-right-name: 'bottom-plat-right'
+$bottom-plat-right-x: 42px
+$bottom-plat-right-y: 888px
+$bottom-plat-right-offset-x: -42px
+$bottom-plat-right-offset-y: -888px
+$bottom-plat-right-width: 42px
+$bottom-plat-right-height: 143px
+$bottom-plat-right-total-width: 1261px
+$bottom-plat-right-total-height: 1174px
+$bottom-plat-right-image: '../i/sprite.png'
+$bottom-plat-right: (42px, 888px, -42px, -888px, 42px, 143px, 1261px, 1174px, '../i/sprite.png', 'bottom-plat-right', )
+$call-doctor-name: 'call-doctor'
+$call-doctor-x: 886px
+$call-doctor-y: 376px
+$call-doctor-offset-x: -886px
+$call-doctor-offset-y: -376px
+$call-doctor-width: 131px
+$call-doctor-height: 123px
+$call-doctor-total-width: 1261px
+$call-doctor-total-height: 1174px
+$call-doctor-image: '../i/sprite.png'
+$call-doctor: (886px, 376px, -886px, -376px, 131px, 123px, 1261px, 1174px, '../i/sprite.png', 'call-doctor', )
+$checkbox-active-name: 'checkbox-active'
+$checkbox-active-x: 1240px
+$checkbox-active-y: 684px
+$checkbox-active-offset-x: -1240px
+$checkbox-active-offset-y: -684px
+$checkbox-active-width: 20px
+$checkbox-active-height: 20px
+$checkbox-active-total-width: 1261px
+$checkbox-active-total-height: 1174px
+$checkbox-active-image: '../i/sprite.png'
+$checkbox-active: (1240px, 684px, -1240px, -684px, 20px, 20px, 1261px, 1174px, '../i/sprite.png', 'checkbox-active', )
+$checkbox-none-name: 'checkbox-none'
+$checkbox-none-x: 1240px
+$checkbox-none-y: 644px
+$checkbox-none-offset-x: -1240px
+$checkbox-none-offset-y: -644px
+$checkbox-none-width: 20px
+$checkbox-none-height: 20px
+$checkbox-none-total-width: 1261px
+$checkbox-none-total-height: 1174px
+$checkbox-none-image: '../i/sprite.png'
+$checkbox-none: (1240px, 644px, -1240px, -644px, 20px, 20px, 1261px, 1174px, '../i/sprite.png', 'checkbox-none', )
+$checkbox-active-name: 'checkbox_active'
+$checkbox-active-x: 1240px
+$checkbox-active-y: 664px
+$checkbox-active-offset-x: -1240px
+$checkbox-active-offset-y: -664px
+$checkbox-active-width: 20px
+$checkbox-active-height: 20px
+$checkbox-active-total-width: 1261px
+$checkbox-active-total-height: 1174px
+$checkbox-active-image: '../i/sprite.png'
+$checkbox-active: (1240px, 664px, -1240px, -664px, 20px, 20px, 1261px, 1174px, '../i/sprite.png', 'checkbox_active', )
+$close-name: 'close'
+$close-x: 1240px
+$close-y: 763px
+$close-offset-x: -1240px
+$close-offset-y: -763px
+$close-width: 15px
+$close-height: 15px
+$close-total-width: 1261px
+$close-total-height: 1174px
+$close-image: '../i/sprite.png'
+$close: (1240px, 763px, -1240px, -763px, 15px, 15px, 1261px, 1174px, '../i/sprite.png', 'close', )
+$complaints-name: 'complaints'
+$complaints-x: 1130px
+$complaints-y: 376px
+$complaints-offset-x: -1130px
+$complaints-offset-y: -376px
+$complaints-width: 109px
+$complaints-height: 119px
+$complaints-total-width: 1261px
+$complaints-total-height: 1174px
+$complaints-image: '../i/sprite.png'
+$complaints: (1130px, 376px, -1130px, -376px, 109px, 119px, 1261px, 1174px, '../i/sprite.png', 'complaints', )
+$datepicker-next-name: 'datepicker-next'
+$datepicker-next-x: 1054px
+$datepicker-next-y: 311px
+$datepicker-next-offset-x: -1054px
+$datepicker-next-offset-y: -311px
+$datepicker-next-width: 25px
+$datepicker-next-height: 25px
+$datepicker-next-total-width: 1261px
+$datepicker-next-total-height: 1174px
+$datepicker-next-image: '../i/sprite.png'
+$datepicker-next: (1054px, 311px, -1054px, -311px, 25px, 25px, 1261px, 1174px, '../i/sprite.png', 'datepicker-next', )
+$datepicker-prev-name: 'datepicker-prev'
+$datepicker-prev-x: 1079px
+$datepicker-prev-y: 311px
+$datepicker-prev-offset-x: -1079px
+$datepicker-prev-offset-y: -311px
+$datepicker-prev-width: 25px
+$datepicker-prev-height: 25px
+$datepicker-prev-total-width: 1261px
+$datepicker-prev-total-height: 1174px
+$datepicker-prev-image: '../i/sprite.png'
+$datepicker-prev: (1079px, 311px, -1079px, -311px, 25px, 25px, 1261px, 1174px, '../i/sprite.png', 'datepicker-prev', )
+$device-status-bg-name: 'device-status-bg'
+$device-status-bg-x: 794px
+$device-status-bg-y: 311px
+$device-status-bg-offset-x: -794px
+$device-status-bg-offset-y: -311px
+$device-status-bg-width: 260px
+$device-status-bg-height: 31px
+$device-status-bg-total-width: 1261px
+$device-status-bg-total-height: 1174px
+$device-status-bg-image: '../i/sprite.png'
+$device-status-bg: (794px, 311px, -794px, -311px, 260px, 31px, 1261px, 1174px, '../i/sprite.png', 'device-status-bg', )
+$diary-name: 'diary'
+$diary-x: 669px
+$diary-y: 557px
+$diary-offset-x: -669px
+$diary-offset-y: -557px
+$diary-width: 92px
+$diary-height: 99px
+$diary-total-width: 1261px
+$diary-total-height: 1174px
+$diary-image: '../i/sprite.png'
+$diary: (669px, 557px, -669px, -557px, 92px, 99px, 1261px, 1174px, '../i/sprite.png', 'diary', )
+$down-arrow-name: 'down-arrow'
+$down-arrow-x: 1169px
+$down-arrow-y: 311px
+$down-arrow-offset-x: -1169px
+$down-arrow-offset-y: -311px
+$down-arrow-width: 10px
+$down-arrow-height: 6px
+$down-arrow-total-width: 1261px
+$down-arrow-total-height: 1174px
+$down-arrow-image: '../i/sprite.png'
+$down-arrow: (1169px, 311px, -1169px, -311px, 10px, 6px, 1261px, 1174px, '../i/sprite.png', 'down-arrow', )
+$drug-intake-name: 'drug-intake'
+$drug-intake-x: 1017px
+$drug-intake-y: 376px
+$drug-intake-offset-x: -1017px
+$drug-intake-offset-y: -376px
+$drug-intake-width: 113px
+$drug-intake-height: 121px
+$drug-intake-total-width: 1261px
+$drug-intake-total-height: 1174px
+$drug-intake-image: '../i/sprite.png'
+$drug-intake: (1017px, 376px, -1017px, -376px, 113px, 121px, 1261px, 1174px, '../i/sprite.png', 'drug-intake', )
+$film-info-name: 'film-info'
+$film-info-x: 761px
+$film-info-y: 557px
+$film-info-offset-x: -761px
+$film-info-offset-y: -557px
+$film-info-width: 55px
+$film-info-height: 56px
+$film-info-total-width: 1261px
+$film-info-total-height: 1174px
+$film-info-image: '../i/sprite.png'
+$film-info: (761px, 557px, -761px, -557px, 55px, 56px, 1261px, 1174px, '../i/sprite.png', 'film-info', )
+$infobar-lines-name: 'infobar-lines'
+$infobar-lines-x: 1240px
+$infobar-lines-y: 0px
+$infobar-lines-offset-x: -1240px
+$infobar-lines-offset-y: 0px
+$infobar-lines-width: 21px
+$infobar-lines-height: 644px
+$infobar-lines-total-width: 1261px
+$infobar-lines-total-height: 1174px
+$infobar-lines-image: '../i/sprite.png'
+$infobar-lines: (1240px, 0px, -1240px, 0px, 21px, 644px, 1261px, 1174px, '../i/sprite.png', 'infobar-lines', )
+$l-arrow-white-name: 'l-arrow-white'
+$l-arrow-white-x: 1253px
+$l-arrow-white-y: 723px
+$l-arrow-white-offset-x: -1253px
+$l-arrow-white-offset-y: -723px
+$l-arrow-white-width: 8px
+$l-arrow-white-height: 15px
+$l-arrow-white-total-width: 1261px
+$l-arrow-white-total-height: 1174px
+$l-arrow-white-image: '../i/sprite.png'
+$l-arrow-white: (1253px, 723px, -1253px, -723px, 8px, 15px, 1261px, 1174px, '../i/sprite.png', 'l-arrow-white', )
+$l-arrow-name: 'l-arrow'
+$l-arrow-x: 1129px
+$l-arrow-y: 311px
+$l-arrow-offset-x: -1129px
+$l-arrow-offset-y: -311px
+$l-arrow-width: 11px
+$l-arrow-height: 18px
+$l-arrow-total-width: 1261px
+$l-arrow-total-height: 1174px
+$l-arrow-image: '../i/sprite.png'
+$l-arrow: (1129px, 311px, -1129px, -311px, 11px, 18px, 1261px, 1174px, '../i/sprite.png', 'l-arrow', )
+$l-arrow2-name: 'l-arrow2'
+$l-arrow2-x: 1151px
+$l-arrow2-y: 311px
+$l-arrow2-offset-x: -1151px
+$l-arrow2-offset-y: -311px
+$l-arrow2-width: 11px
+$l-arrow2-height: 18px
+$l-arrow2-total-width: 1261px
+$l-arrow2-total-height: 1174px
+$l-arrow2-image: '../i/sprite.png'
+$l-arrow2: (1151px, 311px, -1151px, -311px, 11px, 18px, 1261px, 1174px, '../i/sprite.png', 'l-arrow2', )
+$login-separator-name: 'login-separator'
+$login-separator-x: 1260px
+$login-separator-y: 644px
+$login-separator-offset-x: -1260px
+$login-separator-offset-y: -644px
+$login-separator-width: 1px
+$login-separator-height: 20px
+$login-separator-total-width: 1261px
+$login-separator-total-height: 1174px
+$login-separator-image: '../i/sprite.png'
+$login-separator: (1260px, 644px, -1260px, -644px, 1px, 20px, 1261px, 1174px, '../i/sprite.png', 'login-separator', )
+$login-submit-name: 'login-submit'
+$login-submit-x: 794px
+$login-submit-y: 342px
+$login-submit-offset-x: -794px
+$login-submit-offset-y: -342px
+$login-submit-width: 228px
+$login-submit-height: 32px
+$login-submit-total-width: 1261px
+$login-submit-total-height: 1174px
+$login-submit-image: '../i/sprite.png'
+$login-submit: (794px, 342px, -794px, -342px, 228px, 32px, 1261px, 1174px, '../i/sprite.png', 'login-submit', )
+$main-menu-separator-name: 'main-menu-separator'
+$main-menu-separator-x: 1260px
+$main-menu-separator-y: 684px
+$main-menu-separator-offset-x: -1260px
+$main-menu-separator-offset-y: -684px
+$main-menu-separator-width: 1px
+$main-menu-separator-height: 16px
+$main-menu-separator-total-width: 1261px
+$main-menu-separator-total-height: 1174px
+$main-menu-separator-image: '../i/sprite.png'
+$main-menu-separator: (1260px, 684px, -1260px, -684px, 1px, 16px, 1261px, 1174px, '../i/sprite.png', 'main-menu-separator', )
+$mainpage-item-bg-big-name: 'mainpage-item-bg-big'
+$mainpage-item-bg-big-x: 0px
+$mainpage-item-bg-big-y: 557px
+$mainpage-item-bg-big-offset-x: 0px
+$mainpage-item-bg-big-offset-y: -557px
+$mainpage-item-bg-big-width: 229px
+$mainpage-item-bg-big-height: 229px
+$mainpage-item-bg-big-total-width: 1261px
+$mainpage-item-bg-big-total-height: 1174px
+$mainpage-item-bg-big-image: '../i/sprite.png'
+$mainpage-item-bg-big: (0px, 557px, 0px, -557px, 229px, 229px, 1261px, 1174px, '../i/sprite.png', 'mainpage-item-bg-big', )
+$mainpage-item-bg-small-name: 'mainpage-item-bg-small'
+$mainpage-item-bg-small-x: 229px
+$mainpage-item-bg-small-y: 557px
+$mainpage-item-bg-small-offset-x: -229px
+$mainpage-item-bg-small-offset-y: -557px
+$mainpage-item-bg-small-width: 229px
+$mainpage-item-bg-small-height: 229px
+$mainpage-item-bg-small-total-width: 1261px
+$mainpage-item-bg-small-total-height: 1174px
+$mainpage-item-bg-small-image: '../i/sprite.png'
+$mainpage-item-bg-small: (229px, 557px, -229px, -557px, 229px, 229px, 1261px, 1174px, '../i/sprite.png', 'mainpage-item-bg-small', )
+$mainpage-item-bg-smooth-name: 'mainpage-item-bg-smooth'
+$mainpage-item-bg-smooth-x: 541px
+$mainpage-item-bg-smooth-y: 145px
+$mainpage-item-bg-smooth-offset-x: -541px
+$mainpage-item-bg-smooth-offset-y: -145px
+$mainpage-item-bg-smooth-width: 253px
+$mainpage-item-bg-smooth-height: 229px
+$mainpage-item-bg-smooth-total-width: 1261px
+$mainpage-item-bg-smooth-total-height: 1174px
+$mainpage-item-bg-smooth-image: '../i/sprite.png'
+$mainpage-item-bg-smooth: (541px, 145px, -541px, -145px, 253px, 229px, 1261px, 1174px, '../i/sprite.png', 'mainpage-item-bg-smooth', )
+$mainpage-item-bg-name: 'mainpage-item-bg'
+$mainpage-item-bg-x: 286px
+$mainpage-item-bg-y: 145px
+$mainpage-item-bg-offset-x: -286px
+$mainpage-item-bg-offset-y: -145px
+$mainpage-item-bg-width: 255px
+$mainpage-item-bg-height: 231px
+$mainpage-item-bg-total-width: 1261px
+$mainpage-item-bg-total-height: 1174px
+$mainpage-item-bg-image: '../i/sprite.png'
+$mainpage-item-bg: (286px, 145px, -286px, -145px, 255px, 231px, 1261px, 1174px, '../i/sprite.png', 'mainpage-item-bg', )
+$multimedia-name: 'multimedia'
+$multimedia-x: 1136px
+$multimedia-y: 145px
+$multimedia-offset-x: -1136px
+$multimedia-offset-y: -145px
+$multimedia-width: 102px
+$multimedia-height: 136px
+$multimedia-total-width: 1261px
+$multimedia-total-height: 1174px
+$multimedia-image: '../i/sprite.png'
+$multimedia: (1136px, 145px, -1136px, -145px, 102px, 136px, 1261px, 1174px, '../i/sprite.png', 'multimedia', )
+$my-reports-name: 'my-reports'
+$my-reports-x: 458px
+$my-reports-y: 557px
+$my-reports-offset-x: -458px
+$my-reports-offset-y: -557px
+$my-reports-width: 98px
+$my-reports-height: 137px
+$my-reports-total-width: 1261px
+$my-reports-total-height: 1174px
+$my-reports-image: '../i/sprite.png'
+$my-reports: (458px, 557px, -458px, -557px, 98px, 137px, 1261px, 1174px, '../i/sprite.png', 'my-reports', )
+$next-name: 'next'
+$next-x: 1240px
+$next-y: 723px
+$next-offset-x: -1240px
+$next-offset-y: -723px
+$next-width: 13px
+$next-height: 20px
+$next-total-width: 1261px
+$next-total-height: 1174px
+$next-image: '../i/sprite.png'
+$next: (1240px, 723px, -1240px, -723px, 13px, 20px, 1261px, 1174px, '../i/sprite.png', 'next', )
+$options-separator-name: 'options-separator'
+$options-separator-x: 541px
+$options-separator-y: 374px
+$options-separator-offset-x: -541px
+$options-separator-offset-y: -374px
+$options-separator-width: 280px
+$options-separator-height: 1px
+$options-separator-total-width: 1261px
+$options-separator-total-height: 1174px
+$options-separator-image: '../i/sprite.png'
+$options-separator: (541px, 374px, -541px, -374px, 280px, 1px, 1261px, 1174px, '../i/sprite.png', 'options-separator', )
+$plat-bg-name: 'plat-bg'
+$plat-bg-x: 0px
+$plat-bg-y: 1031px
+$plat-bg-offset-x: 0px
+$plat-bg-offset-y: -1031px
+$plat-bg-width: 21px
+$plat-bg-height: 143px
+$plat-bg-total-width: 1261px
+$plat-bg-total-height: 1174px
+$plat-bg-image: '../i/sprite.png'
+$plat-bg: (0px, 1031px, 0px, -1031px, 21px, 143px, 1261px, 1174px, '../i/sprite.png', 'plat-bg', )
+$quality-name: 'quality'
+$quality-x: 556px
+$quality-y: 557px
+$quality-offset-x: -556px
+$quality-offset-y: -557px
+$quality-width: 113px
+$quality-height: 101px
+$quality-total-width: 1261px
+$quality-total-height: 1174px
+$quality-image: '../i/sprite.png'
+$quality: (556px, 557px, -556px, -557px, 113px, 101px, 1261px, 1174px, '../i/sprite.png', 'quality', )
+$r-arrow-white-name: 'r-arrow-white'
+$r-arrow-white-x: 1253px
+$r-arrow-white-y: 743px
+$r-arrow-white-offset-x: -1253px
+$r-arrow-white-offset-y: -743px
+$r-arrow-white-width: 8px
+$r-arrow-white-height: 15px
+$r-arrow-white-total-width: 1261px
+$r-arrow-white-total-height: 1174px
+$r-arrow-white-image: '../i/sprite.png'
+$r-arrow-white: (1253px, 743px, -1253px, -743px, 8px, 15px, 1261px, 1174px, '../i/sprite.png', 'r-arrow-white', )
+$r-arrow-name: 'r-arrow'
+$r-arrow-x: 1223px
+$r-arrow-y: 281px
+$r-arrow-offset-x: -1223px
+$r-arrow-offset-y: -281px
+$r-arrow-width: 11px
+$r-arrow-height: 18px
+$r-arrow-total-width: 1261px
+$r-arrow-total-height: 1174px
+$r-arrow-image: '../i/sprite.png'
+$r-arrow: (1223px, 281px, -1223px, -281px, 11px, 18px, 1261px, 1174px, '../i/sprite.png', 'r-arrow', )
+$r-arrow2-name: 'r-arrow2'
+$r-arrow2-x: 1140px
+$r-arrow2-y: 311px
+$r-arrow2-offset-x: -1140px
+$r-arrow2-offset-y: -311px
+$r-arrow2-width: 11px
+$r-arrow2-height: 18px
+$r-arrow2-total-width: 1261px
+$r-arrow2-total-height: 1174px
+$r-arrow2-image: '../i/sprite.png'
+$r-arrow2: (1140px, 311px, -1140px, -311px, 11px, 18px, 1261px, 1174px, '../i/sprite.png', 'r-arrow2', )
+$right-arrow-name: 'right-arrow'
+$right-arrow-x: 1162px
+$right-arrow-y: 311px
+$right-arrow-offset-x: -1162px
+$right-arrow-offset-y: -311px
+$right-arrow-width: 7px
+$right-arrow-height: 11px
+$right-arrow-total-width: 1261px
+$right-arrow-total-height: 1174px
+$right-arrow-image: '../i/sprite.png'
+$right-arrow: (1162px, 311px, -1162px, -311px, 7px, 11px, 1261px, 1174px, '../i/sprite.png', 'right-arrow', )
+$search-name: 'search'
+$search-x: 1104px
+$search-y: 311px
+$search-offset-x: -1104px
+$search-offset-y: -311px
+$search-width: 25px
+$search-height: 18px
+$search-total-width: 1261px
+$search-total-height: 1174px
+$search-image: '../i/sprite.png'
+$search: (1104px, 311px, -1104px, -311px, 25px, 18px, 1261px, 1174px, '../i/sprite.png', 'search', )
+$select-name: 'select'
+$select-x: 1240px
+$select-y: 778px
+$select-offset-x: -1240px
+$select-offset-y: -778px
+$select-width: 21px
+$select-height: 7px
+$select-total-width: 1261px
+$select-total-height: 1174px
+$select-image: '../i/sprite.png'
+$select: (1240px, 778px, -1240px, -778px, 21px, 7px, 1261px, 1174px, '../i/sprite.png', 'select', )
+$sidebar-max-name: 'sidebar-max'
+$sidebar-max-x: 1136px
+$sidebar-max-y: 281px
+$sidebar-max-offset-x: -1136px
+$sidebar-max-offset-y: -281px
+$sidebar-max-width: 31px
+$sidebar-max-height: 29px
+$sidebar-max-total-width: 1261px
+$sidebar-max-total-height: 1174px
+$sidebar-max-image: '../i/sprite.png'
+$sidebar-max: (1136px, 281px, -1136px, -281px, 31px, 29px, 1261px, 1174px, '../i/sprite.png', 'sidebar-max', )
+$sidebar-min-name: 'sidebar-min'
+$sidebar-min-x: 1167px
+$sidebar-min-y: 281px
+$sidebar-min-offset-x: -1167px
+$sidebar-min-offset-y: -281px
+$sidebar-min-width: 31px
+$sidebar-min-height: 29px
+$sidebar-min-total-width: 1261px
+$sidebar-min-total-height: 1174px
+$sidebar-min-image: '../i/sprite.png'
+$sidebar-min: (1167px, 281px, -1167px, -281px, 31px, 29px, 1261px, 1174px, '../i/sprite.png', 'sidebar-min', )
+$slider-name: 'slider'
+$slider-x: 286px
+$slider-y: 519px
+$slider-offset-x: -286px
+$slider-offset-y: -519px
+$slider-width: 509px
+$slider-height: 17px
+$slider-total-width: 1261px
+$slider-total-height: 1174px
+$slider-image: '../i/sprite.png'
+$slider: (286px, 519px, -286px, -519px, 509px, 17px, 1261px, 1174px, '../i/sprite.png', 'slider', )
+$softphone-name: 'softphone'
+$softphone-x: 0px
+$softphone-y: 145px
+$softphone-offset-x: 0px
+$softphone-offset-y: -145px
+$softphone-width: 286px
+$softphone-height: 412px
+$softphone-total-width: 1261px
+$softphone-total-height: 1174px
+$softphone-image: '../i/sprite.png'
+$softphone: (0px, 145px, 0px, -145px, 286px, 412px, 1261px, 1174px, '../i/sprite.png', 'softphone', )
+$split-name: 'split'
+$split-x: 1260px
+$split-y: 664px
+$split-offset-x: -1260px
+$split-offset-y: -664px
+$split-width: 1px
+$split-height: 16px
+$split-total-width: 1261px
+$split-total-height: 1174px
+$split-image: '../i/sprite.png'
+$split: (1260px, 664px, -1260px, -664px, 1px, 16px, 1261px, 1174px, '../i/sprite.png', 'split', )
+$toggle-theme-icon-name: 'toggle-theme-icon'
+$toggle-theme-icon-x: 1198px
+$toggle-theme-icon-y: 281px
+$toggle-theme-icon-offset-x: -1198px
+$toggle-theme-icon-offset-y: -281px
+$toggle-theme-icon-width: 25px
+$toggle-theme-icon-height: 25px
+$toggle-theme-icon-total-width: 1261px
+$toggle-theme-icon-total-height: 1174px
+$toggle-theme-icon-image: '../i/sprite.png'
+$toggle-theme-icon: (1198px, 281px, -1198px, -281px, 25px, 25px, 1261px, 1174px, '../i/sprite.png', 'toggle-theme-icon', )
+$top-infobar-corner-name: 'top-infobar-corner'
+$top-infobar-corner-x: 84px
+$top-infobar-corner-y: 888px
+$top-infobar-corner-offset-x: -84px
+$top-infobar-corner-offset-y: -888px
+$top-infobar-corner-width: 31px
+$top-infobar-corner-height: 112px
+$top-infobar-corner-total-width: 1261px
+$top-infobar-corner-total-height: 1174px
+$top-infobar-corner-image: '../i/sprite.png'
+$top-infobar-corner: (84px, 888px, -84px, -888px, 31px, 112px, 1261px, 1174px, '../i/sprite.png', 'top-infobar-corner', )
+$top-plat-left-name: 'top-plat-left'
+$top-plat-left-x: 458px
+$top-plat-left-y: 694px
+$top-plat-left-offset-x: -458px
+$top-plat-left-offset-y: -694px
+$top-plat-left-width: 42px
+$top-plat-left-height: 71px
+$top-plat-left-total-width: 1261px
+$top-plat-left-total-height: 1174px
+$top-plat-left-image: '../i/sprite.png'
+$top-plat-left: (458px, 694px, -458px, -694px, 42px, 71px, 1261px, 1174px, '../i/sprite.png', 'top-plat-left', )
+$top-plat-right-name: 'top-plat-right'
+$top-plat-right-x: 500px
+$top-plat-right-y: 694px
+$top-plat-right-offset-x: -500px
+$top-plat-right-offset-y: -694px
+$top-plat-right-width: 42px
+$top-plat-right-height: 71px
+$top-plat-right-total-width: 1261px
+$top-plat-right-total-height: 1174px
+$top-plat-right-image: '../i/sprite.png'
+$top-plat-right: (500px, 694px, -500px, -694px, 42px, 71px, 1261px, 1174px, '../i/sprite.png', 'top-plat-right', )
+$top-plat-name: 'top-plat'
+$top-plat-x: 0px
+$top-plat-y: 0px
+$top-plat-offset-x: 0px
+$top-plat-offset-y: 0px
+$top-plat-width: 1240px
+$top-plat-height: 145px
+$top-plat-total-width: 1261px
+$top-plat-total-height: 1174px
+$top-plat-image: '../i/sprite.png'
+$top-plat: (0px, 0px, 0px, 0px, 1240px, 145px, 1261px, 1174px, '../i/sprite.png', 'top-plat', )
+$up-arrow-name: 'up-arrow'
+$up-arrow-x: 1223px
+$up-arrow-y: 299px
+$up-arrow-offset-x: -1223px
+$up-arrow-offset-y: -299px
+$up-arrow-width: 11px
+$up-arrow-height: 7px
+$up-arrow-total-width: 1261px
+$up-arrow-total-height: 1174px
+$up-arrow-image: '../i/sprite.png'
+$up-arrow: (1223px, 299px, -1223px, -299px, 11px, 7px, 1261px, 1174px, '../i/sprite.png', 'up-arrow', )
+$spritesheet-width: 1261px
+$spritesheet-height: 1174px
+$spritesheet-image: '../i/sprite.png'
+$spritesheet-sprites: ($alert-bg, $alert-btn-pressed, $alert-btn, $back, $bar-bg, $bg, $big-no-button, $big-ok-button, $bottom-plat-left, $bottom-plat-right, $call-doctor, $checkbox-active, $checkbox-none, $checkbox-active, $close, $complaints, $datepicker-next, $datepicker-prev, $device-status-bg, $diary, $down-arrow, $drug-intake, $film-info, $infobar-lines, $l-arrow-white, $l-arrow, $l-arrow2, $login-separator, $login-submit, $main-menu-separator, $mainpage-item-bg-big, $mainpage-item-bg-small, $mainpage-item-bg-smooth, $mainpage-item-bg, $multimedia, $my-reports, $next, $options-separator, $plat-bg, $quality, $r-arrow-white, $r-arrow, $r-arrow2, $right-arrow, $search, $select, $sidebar-max, $sidebar-min, $slider, $softphone, $split, $toggle-theme-icon, $top-infobar-corner, $top-plat-left, $top-plat-right, $top-plat, $up-arrow, )
+$spritesheet: (1261px, 1174px, '../i/sprite.png', $spritesheet-sprites, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

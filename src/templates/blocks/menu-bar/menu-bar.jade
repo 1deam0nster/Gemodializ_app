@@ -1,0 +1,33 @@
+.menu-bar
+    ul.menu-list
+        li(data-item-id = 0).active
+            span.icon.icon-quality
+            | История болезни
+
+        li(data-item-id = 1)
+            span.icon.icon-quality
+            | Анализ
+
+        li(data-item-id = 2)
+            span.icon.icon-quality
+            | ЛДП
+
+    ul.submenu-list.tabs.hold-left(data-menu-id = 0)
+        li.tab-title.active
+            a(href = "summary-info.html", ajax-target=".workspace-content-block") Сводная информация
+        li.tab-title
+            a(href = "patient-reception.html", ajax-target=".workspace-content-block") Приёмы
+
+    ul.submenu-list.tabs.hold-left(data-menu-id = 1).hidden
+        li.tab-title
+            a Отчёты по контролю ЛДП
+        li.tab-title
+            a(href = "quality.html") Показатели качества лечения пациентов
+        li.tab-title
+            a(href = "diagnostic.html") Подсистема диагностики
+
+    ul.submenu-list.tabs.hold-left(data-menu-id = 2).hidden
+        li.tab-title
+            a(href = "cams-info.html", ajax-target=".workspace-content-block") Схема отделения
+        li.tab-title
+            a(href = "shedule.html", ajax-target=".workspace-content-block") Расписание

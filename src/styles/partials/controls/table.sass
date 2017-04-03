@@ -1,0 +1,52 @@
+table
+  width: 100%
+  margin: 0
+
+  thead, tbody
+    tr
+      th, td
+        height: 20px
+        padding: 0.5rem
+        font-size: 0.8rem
+        font-weight: 300
+
+        &.no-wrap-clip
+          white-space: nowrap
+          overflow-x: hidden
+          text-overflow: ellipsis
+          max-width: 185px
+
+        &.hold-left
+          text-align: left
+
+        &.hold-right
+          text-align: right
+
+        &.warning
+          background: $table-warning-color
+
+        &.centered
+          text-align: center
+
+      &.dark-color
+        th, td
+          color: $dark-font-color
+
+  &.small
+    thead tr th, tbody tr td
+      padding: 0px 10px
+      font-size: .75rem
+      font-weight: 300
+      color: $dark-font-color
+
+  &.regular-font
+    thead tr th, tbody tr td
+      font-weight: 300
+
+  &.transparent
+    thead, tbody
+      background: transparent
+
+      tr
+        th, td
+          background: transparent

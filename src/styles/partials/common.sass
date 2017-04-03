@@ -1,0 +1,149 @@
+@import "sprite"
+@import "header"
+@import "glyph"
+@import "keyboard"
+@import "common-mixins"
+@import "controls/forms"
+
+// Default
+//@import "pagination"
+@import "mainpage"
+@import "summary-info"
+@import "menu-bar"
+@import "workspace"
+@import "cams-info"
+@import "schedule"
+@import "diagnostic"
+@import "quality"
+@import "patient-popup"
+@import "journal-popup"
+@import "documents-archive-popup"
+@import "check-diagnosis-popup"
+@import "patient-reception"
+
+//
+@import "controls/basic-controls"
+@import "controls/table"
+@import "controls/tabs"
+@import "datepicker"
+@import "popup"
+@import "widget"
+
+html, body
+  height: 100%
+  width: 100%
+  padding: 0
+  margin: 0
+
+div, p, span, img
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+ul
+  list-style: none
+  margin: 0
+
+body
+  display: flex
+  flex-direction: column
+  background: $background
+  min-width: 980px // TODO: Выпилить, если будет адаптация
+  overflow: hidden
+  font-size: 0.8rem
+
+.dark-font
+  color: $dark-font-color
+
+.layout
+  display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  background: #000
+  z-index: 9999
+  opacity: 0.4
+
+.main
+  max-width: initial
+  overflow: hidden
+  display: flex
+  flex: 1 0 auto
+  flex-direction: row
+  justify-content: space-between
+
+  .page-content
+    //min-width: 655px // TODO: Выпилить, если будет адаптация
+    //max-height: 970px
+    width: 100%
+    flex: 1 0 auto
+    overflow: hidden
+
+  .ajax-content
+    display: flex
+    flex-grow: 1
+    flex-shrink: 1
+
+  .workspace-content-block
+    overflow: hidden
+
+.control-buttons, .control-bar
+  display: flex
+  flex-direction: row
+  align-self: stretch
+  justify-content: flex-end
+  height: 50px
+  align-items: center
+
+  .button
+    display: flex
+    margin: 0 10px 0 10px
+    align-self: center
+    align-items: center
+    height: 45px
+
+    &:last-child
+      margin: 0 0 0 10px
+
+    .icon
+      font-size: 2em
+      margin-right: 5px
+
+
+.hidden
+  display: none !important
+
+p, span, div
+  font-size: 0.8rem
+
+p.centered
+  text-align: center
+
+
+.row, .row .row
+  margin: 0
+
+.inline-row
+  +flexRow
+
+.flex-start
+  align-items: flex-start !important
+
+.extender
+  +growFlexColumn
+  background: $block-color
+
+.fa
+  font-family: FontAwesome !important
+
+.full-width
+  width: 100% !important
+
+.space-between
+  justify-content: space-between
+
+.align-center
+  text-align: center

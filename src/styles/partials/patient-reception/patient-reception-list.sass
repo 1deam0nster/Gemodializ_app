@@ -1,0 +1,108 @@
+.patient-reception-list
+  +growFlexRow
+
+  .all-list-content
+    +flexColumn
+    +fullHeightBlock()
+    width: 100%
+    //flex-grow: 1
+    //transition: 1.5s ease
+    //
+    //&.shrink
+    //  width: 740px
+    //  flex-grow: 0
+
+    ul.reception-list
+      list-style: none
+      max-height: calc(100vh - 140px)
+      margin: 0
+
+      li
+        +growFlexRow
+        +verticalCenteredText
+        background: $block-color
+        justify-content: space-between
+        height: 60px
+        margin-top: 1px
+        padding: 0 15px 0 10px
+
+        &.highlight
+          background: $highlighted-block-color
+
+        p
+          margin: 0
+          font-weight: 300
+
+        .actions
+          .button
+            &.open
+              width: 100px
+
+  .current-selection-list-content
+    +growFlexColumn
+    width: 0
+    margin-left: 1px
+
+
+    .header
+      justify-content: space-between
+      min-width: 400px
+
+      p
+        margin: 0
+
+    .reception-content-list
+      max-height: calc(100vh - 140px)
+
+      .reception
+        background: $block-color
+        margin-top: 1px
+        min-width: 400px
+
+        .reception-header
+          +growFlexRow
+          +verticalCenteredText
+          justify-content: space-between
+          padding: 15px
+
+          p
+            margin: 0
+
+          .actions
+            +flexRow
+
+        ul.reception-tabs
+          padding: 0px 10px 10px 10px
+          list-style: none
+          margin: 0
+
+          li
+            .reception-tab
+              +flexRow
+              +verticalCenteredText
+              height: 20px
+              padding: 0 5px
+              background: $block-color
+              margin-top: 1px
+              font-size: 0.75rem
+              font-weight: 300
+              cursor: pointer
+
+              &:hover
+                background: $highlighted-block-color
+
+              .icon-down
+                +sprite($right-arrow)
+                margin: 0 10px 0 3px
+
+              &.expanded
+                .icon-down
+                  +sprite($down-arrow)
+                  margin-left: 0
+
+
+            .content
+              background: $base-block-color
+              margin-top: 1px
+              padding: 15px
+              display: none

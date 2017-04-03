@@ -1,0 +1,72 @@
+.documents-archive-popup.popup
+  display: none
+  width: 780px
+  height: 540px
+  top: calc(50vh - 270px)
+  left: calc(50vw - 390px)
+
+  .content
+    +flexRow
+
+    .documents-list
+      width: 275px
+      background-color: $popup-background
+
+      .filters
+        +flexRow
+        justify-content: space-around
+
+        input
+          width: 120px
+          margin: 5px 10px
+
+          &:last-child
+            margin-left: 0
+
+      table tr th
+        height: 1rem
+
+    .document-content
+      background-color: $popup-background
+      width: 100%
+      margin-left: 1px
+      padding: 20px
+
+      .row-block
+        +growFlexRow
+        +verticalCenteredText
+        margin-bottom: 20px
+
+        p
+          margin: 0
+          width: 160px
+
+        input
+          width: 300px
+
+      .file-item
+        +growFlexRow
+        border-top: 1px solid $block-color
+        margin-bottom: 15px
+
+        .file-icon
+          +flexColumn
+          +verticalCenteredText
+          justify-content: center
+          width: 160px
+
+        .file-info
+          p
+            margin: 10px
+
+          textarea
+            width: 300px
+            height: 70px
+            margin-bottom: 5px
+
+          .button
+            width: 100px
+            background: $block-color
+
+            &:hover
+              background: $highlighted-block-color

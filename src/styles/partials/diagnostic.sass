@@ -1,0 +1,297 @@
+.diagnostic
+  +growFlexColumn
+
+  .toolbar
+    +verticalCenteredText
+    background: $block-color
+    height: 60px
+    padding: 0 10px
+    justify-content: space-between
+    margin-bottom: 10px
+
+
+    .patient-info, .filter, .actions
+      +verticalCenteredText
+
+    .patient-info
+      font-size: 1.1rem
+      font-weight: 300
+
+      .gender, .age
+        margin-left: 20px
+
+        span
+          color: $border-color
+
+
+    .filter
+      font-size: 0.8rem
+      .item
+        +flexRow
+        margin-left: 40px
+
+        .checkbox
+          font-size: 1.4rem
+
+
+    .actions
+      .button
+        width: 145px
+        height: 30px
+
+  .diagnostic-content
+    +growFlexRow
+
+    .separator
+      +flexColumn
+      justify-content: center
+      align-items: center
+      width: 20px
+
+      .split
+        margin: 10px 0
+
+      .left
+        +sprite($l-arrow-white)
+
+      .split
+        +sprite($split)
+
+      .right
+        +sprite($r-arrow-white)
+
+    .indications, .nosologies, .recommend-to-check
+      +flexColumn
+      width: 290px
+
+      p
+        margin: 0
+        font-size: 0.8rem
+        font-weight: 300
+
+    .nosologies
+      .actions
+        background: $block-color
+        +flexRow
+
+        .button
+          margin: 10px
+          font-weight: 300
+          width: 140px
+
+          &:last-child
+            margin-left: 0
+            width: 130px
+
+    .diagnostic-workspace
+      +growFlexColumn
+
+      .toolbar
+        justify-content: flex-start
+        background: $block-color
+        height: 50px
+        margin-bottom: 1px
+
+        .button
+          width: 145px
+          margin-right: 10px
+
+      .viewport
+        +growFlexColumn
+        padding: 10px
+        background: $block-color
+
+        .sphere-content
+          +growFlexRow
+
+          .options
+            +flexColumn
+            width: 300px
+
+            .block
+              background: $block-color
+              margin: 0 10px 5px 0
+              padding: 10px
+
+              &.transparent
+                background: transparent
+                padding: 0
+                margin-top: 5px
+
+              .row
+                +verticalCenteredText
+                margin-bottom: 10px
+
+                .checkbox
+                  font-size: 1.5rem
+
+                &:last-child
+                  margin-bottom: 0
+
+                &.columns-2
+                  +flexRow
+
+                  .button, p, select
+                    width: 145px
+
+                    &.button
+                      margin-right: 10px
+
+                      &:last-child
+                        margin-right: 0
+
+                  select
+                    margin-left: 10px
+
+                p
+                  margin: 0
+                  font-size: 0.8rem
+                  font-weight: 300
+
+              &.slider-option
+                +flexColumn
+                height: 75px
+                padding: 5px 0
+
+                p
+                  text-align: center
+                  font-size: 0.8rem
+                  font-weight: 300
+                  margin-bottom: 5px
+
+                img
+                  width: 291px
+                  height: 31px
+
+          .sphere
+            +growFlexRow
+            justify-content: center
+
+            img
+              width: 562px
+              height: 565px
+
+
+        .psmp-content
+          +growFlexColumn
+
+          .filter-bar
+            +flexRow
+            justify-content: space-between
+
+            .column-block
+              +growFlexColumn
+
+              &:first-child
+                .row
+                  align-items: center
+
+                  &:first-child
+                    align-items: flex-start
+
+                    p
+                      margin-top: 6px
+
+                  &:last-child
+                    align-items: flex-end
+
+                    p
+                      margin-bottom: 4px
+
+              .row
+                +growFlexRow
+
+                &:first-child
+                  select
+                    width: 350px
+
+                p
+                  font-size: 0.8rem
+                  width: 165px
+                  text-align: right
+                  margin: 0 10px 0 0
+
+                select, .button
+                  margin-right: 10px
+                  width: 170px
+
+              &:last-child
+                background: $block-color
+                font-weight: 300
+                padding: 10px
+
+                p
+                  margin-bottom: 0
+
+                .patient-status
+                  justify-content: space-between
+
+                  .normal, .low, .middle, .high
+                    width: 100%
+                    text-align: center
+                    padding: 2px 10px
+                    text-shadow: 1px 1px #000
+                    margin-right: 1px
+
+                    &:last-child
+                      margin-right: 0
+
+                  .normal
+                    background: #4443fe
+
+                  .low
+                    background: #8645fe
+
+                  .middle
+                    background: #cb44fe
+
+                  .high
+                    background: #fc44fe
+
+              .checkbox-row
+                margin-top: 10px
+
+                .checkbox
+                  font-size: 1.4rem
+
+                span
+                  font-size: 0.7rem
+
+          .graph-content
+            +flexColumn
+            align-items: center
+            margin-top: 20px
+
+
+        .treatment-program
+          +growFlexColumn
+
+          .row
+            +growFlexRow
+
+            .block
+              background: $block-color
+              width: 50%
+              height: 300px
+              margin: 0 5px 5px 0
+
+              &:last-child
+                margin-right: 0
+
+
+  table
+    thead tr th
+      text-align: left
+      height: 2rem
+
+      .toggler
+        +sprite($up-arrow)
+        display: inline-block
+        margin-right: 10px
+
+    tbody tr td
+      height: 60px
+
+      &:first-child
+        text-align: left
+        width: 210px

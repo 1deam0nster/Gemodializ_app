@@ -1,0 +1,49 @@
+mixin checkinProcessBlock(patientName, patientPhotoSrc, alertedSummary, hardcodeNumber)
+    .checkin-process-block
+        .base-info
+            .base-info-block
+                .main-info-block
+                    .position Смотр - IN
+                    .name-block
+                        .name= patientName
+                        .age 55 лет
+
+                .checkin-data
+                    .left-side
+                        img(src= patientPhotoSrc).patient-avatar
+
+                    .right-side
+                        .block-row
+                            span САД/ДАД/ЧСС
+                            span 152/100/679
+
+                        .block-row
+                            span Вес по ГД
+                            span 169
+
+                        .block-row
+                            span Сухой вес
+                            span 161
+
+                        .block-row
+                            span Вес после ГД
+                            span -
+
+        table.additional-info
+            thead
+                tr
+                    th UF план
+                    th UF факт
+                    th UF план
+                    th UF факт
+
+            tbody
+                tr
+                    td 3.2 л.
+                    td - л.
+                    td -1.9%
+                    td - %
+
+        .warning-info
+            p Измерение давления завершено
+            p Взвешивание завершено

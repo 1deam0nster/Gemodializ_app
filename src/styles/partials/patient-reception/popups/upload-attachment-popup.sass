@@ -1,0 +1,36 @@
+.upload-attachment-popup
+  width: 600px
+  height: 600px
+  top: calc(50vh - 300px)
+  left: calc(50vw - 300px)
+
+  .content
+    padding: 15px
+    background: $popup-background
+
+    .row + .row
+      margin-top: 20px
+
+
+    .upload-area
+      +growFlexColumn
+      +verticalCenteredText
+      justify-content: center
+      height: 100px
+      background: $block-color
+      cursor: pointer
+
+      .fa-cloud-upload
+        transition: 1s ease
+        color: $block-color
+        font-size: 5rem
+
+      p
+        margin: 0 0 0 20px !important
+
+      &:hover
+        background: $highlighted-block-color
+
+        .fa-cloud-upload
+          color: $highlighted-block-color
+          transform: scale3d(1.2,1.2,1.2)

@@ -1,0 +1,76 @@
+.instrumental-analysis-popup.popup
+    .title
+        p Добавление результатов инструментального исследования (Антонов Н.М., Кострома 1.47.0)
+
+
+    .content
+        .row.space-between
+            .column-block
+                p Дата проведения*
+                .date
+                    input( value = '' ).small
+                    .button.icon-button
+                        .fa.fa-calendar
+
+            .column-block
+                p Тип исследования*
+                select.middle-x
+                    option Биоимпедансметрия
+
+            .column-block
+                p Вид исследования*
+                select.middle-x
+
+
+        .row
+            .column-block.full-width
+                p Орган
+                input( value = 'Не выбран' ).full-width
+
+        .row.space-between
+            .column-block
+                p Назначил: ...
+
+            .column-block
+                p Последняя редакция: ...
+
+        .row
+            .spoiler
+                .toggler
+                    span Разультаты исследования
+                    .fa.fa-angle-up
+
+                .content.opened
+                    p.align-center Нет доступных результатов исследования
+
+        .row
+            .spoiler
+                .toggler
+                    span Прикрепленные материалы
+                    .fa.fa-angle-up
+
+                .content.opened
+                    p.align-center Прикрепленные материалы отсутствуют
+
+                    .attachment-actions.row.space-between
+                        a(href = '') Добавить документ
+                        a(href = '') Выбрать документ из архива
+
+        .row
+            .spoiler
+                .toggler
+                    span Заключение*
+                    .fa.fa-angle-up
+
+                .content.opened
+                    textarea
+
+    .actions
+        .left
+
+        .right
+            .button Сохранить
+            .button.close-popup Отмена
+
+script.
+    $("ul.complex").mCustomScrollbar({theme: "minimal"});

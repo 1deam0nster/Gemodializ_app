@@ -1,0 +1,22 @@
+.summary-info
+    .top-widgets-block
+        .column-block.width-25
+            include statistics
+
+        .column-block.width-25
+            include laboratory-analysis
+            include instrumental-analysis
+
+        .column-block.width-50
+            include notifications
+            include procedure-dynamics
+
+    .bottom-widgets-block
+        .column-block.width-50
+            include complications-control
+
+        .column-block.width-50
+            include drug-therapy
+
+script.
+    $(".laboratory-analysis .content, .notifications .content, .drug-therapy .content").mCustomScrollbar({theme: "minimal"});

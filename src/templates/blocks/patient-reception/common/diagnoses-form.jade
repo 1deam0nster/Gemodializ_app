@@ -1,0 +1,44 @@
+.row
+    label Тип диагноза
+    ul.tabs
+        li.tab-title.active
+            a Диагноз при поступлении
+        li.tab-title
+            a Диагноз клинический
+        li.tab-title
+            a Диагноз заключительный клинический
+
+.row
+    label Тип заболевания
+    ul.tabs
+        li.tab-title.active
+            a Основное заболевание
+        li.tab-title
+            a Осложнения основного заболевания
+        li.tab-title
+            a Сопутствующие заболевания
+
+
+.row
+    table
+        thead
+            tr
+                th Код
+                th Название
+                th Характер
+                th Стадия
+                th Степень
+                th Тип
+                th Дата установления
+                th Дата излечения
+                th Категория лечения
+
+        tbody
+            tr
+                td( colspan = 9 ) Нет данных по диагнозам
+
+.row
+    label Комментарий
+
+.row-block
+    textarea

@@ -1,0 +1,137 @@
+.anemia-program
+    .header
+        .left
+            ul.tabs
+                li.tab-title.open-anemia
+                    a Диагностика
+
+                li.tab-title.active
+                    a Программа лечения
+
+        .right
+            .button Показать график
+
+
+    .reception-form-content
+        .step
+            .title Параметры состояния пациента
+
+            .row
+                table.transparent.measures
+                    thead
+                        tr
+                            th Параметр
+                            th Последнее значение
+                            th за 30 дней
+                            th Динамика
+
+                    tbody
+                        tr
+                            td.hold-left Гемоглобин (Hb), (HGB), (Hemoglobin)
+                            td 5 г/л
+                            td
+                                .fa.fa-long-arrow-down
+                                span 125
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+
+                        tr
+                            td.hold-left Ферритин, (Ferri), (Ferritin)
+                            td 1234 мкг/л
+                            td
+                                .fa.fa-long-arrow-down
+                                span 1111
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+                        tr
+                            td.hold-left Насыщение трансферрина железом (TR%FE), (НТ)
+                            td 61.4 %
+                            td
+                                .fa.fa-long-arrow-up
+                                span 27.51
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+                        tr
+                            td.hold-left Средний объем эритроцита (RBC/HCT), (MCV), (Mean corpuscular volume)
+                            td 100 фл
+                            td
+                                .fa.fa-long-arrow-up
+                                span 5.6
+                            td
+                                img( src = 'i/content/small-graph.png' )
+
+        .step
+            .title Инструментальные исследования
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Эхокардиография
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+
+                .info
+                    .type Ультразвуковая денситометрия
+                    .description За последние 6 месяцев инструментальные исследования не проводились
+
+            .row
+                .label-big.vertical-centered.right
+                    a Открыть исследование
+
+                .info
+                    .type УЗИ щитовидных желез (04.12.2015)
+                    .description Патологии ЩЖ не выявлено.
+
+
+        .step
+            .title Медикаментозные назначения
+
+            .row
+                table.transparent.appointments
+                    thead
+                        tr
+                            th
+                            th Введено за 30 дней
+                            th Изменение за 30 дней
+                            th Динамика
+                            th
+
+                    tbody
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Препараты ЭСС (Необходимо отменить ЭСС)
+                                span.fa.fa-info-circle
+                        tr
+                            td.hold-left Эпокрин (р-р для в/в и п/к введ.)
+                            td
+                            td -
+                            td
+                                img( src = 'i/content/small-graph-transparent.png' )
+                            td
+                                a Скорректировать
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Препараты железа
+                                span.fa.fa-info-circle
+                        tr( colspan = 4 )
+                            td.hold-left Не назначено
+
+                        tr
+                            td( colspan = 4 ).group.hold-left
+                                | Витамины и витаминоподобные средства
+                                span.fa.fa-info-circle
+                        tr
+                            td.hold-left Цианокобаламин (Витамин B12) (р-р д/ин.)
+                            td 14
+                            td -12
+                            td
+                                img( src = 'i/content/small-graph-transparent.png' )
+                            td
+                                a Скорректировать

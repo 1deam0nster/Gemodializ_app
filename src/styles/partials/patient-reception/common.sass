@@ -1,0 +1,56 @@
+.hypertension,
+.hypertension-program,
+.anemia,
+.anemia-program,
+.bone-mineral,
+.bone-mineral-program,
+.hsn,
+.ckd-phase,
+.ckd-phase-journal,
+.complaints,
+.anamnesis,
+.inspection,
+.diagnoses,
+.laboratory-analysis,
+.instrumental-analysis,
+.meds,
+.result
+  display: none
+
+.hypertension
+  .header
+    +growFlexRow
+    justify-content: space-between
+
+    ul.tabs
+      height: 30px
+
+.anamnesis
+
+  .row
+    margin-top: 35px
+
+    &:first-child
+      margin-top: 0
+
+  textarea
+    width: 100%
+    height: 300px
+
+.diagnoses
+  textarea
+    width: 100%
+    height: 100px
+
+.laboratory-analysis
+  a
+    border-bottom: 1px dashed $border-color
+
+.instrumental-analysis
+  .description
+    margin-left: 15px
+
+.result
+  textarea
+    width: 100%
+    height: 400px

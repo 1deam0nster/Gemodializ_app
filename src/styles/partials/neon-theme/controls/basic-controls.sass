@@ -1,0 +1,20 @@
+// Selects and Inputs
+select, input, .button, textarea
+  +placeholder-color(#fff)
+  text-shadow: 1px 1px #000
+  border: 0
+
+  &:focus
+    text-shadow: 1px 1px #000
+    border: 0
+
+input.search
+  background: url("../i/design/neon/search.png") no-repeat scroll 100% center, $block-color
+
+select, select:focus
+  background: url('../i/design/neon/select.png') no-repeat right, $block-color
+  cursor: pointer
+  appearance: none
+
+select option
+  background: #1b3545

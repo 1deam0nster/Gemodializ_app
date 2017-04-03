@@ -1,0 +1,131 @@
+.patient-popup.popup
+    .title
+        p Мастер регистрации нового пациента
+        .switcher
+            .button Амбулатория
+            .button.active Стационар
+    .content
+        .row
+            .left-bar
+                img(src="i/content/avatar.jpg")
+                ul.pages
+                    li.active
+                        .bage 1
+                        span Госпитализация
+
+                    li
+                        .bage 2
+                        span Паспортные данные
+
+                    li
+                        .bage 3
+                        span Страховой полис
+
+                    li
+                        .bage 4
+                        span Контактная информация
+
+                    li
+                        .bage 5
+                        span Статус пациента
+
+                    li
+                        .bage 6
+                        span Регистрация карты
+
+                .extender
+
+            .right-block
+                .row
+                    .column-block.first
+                        .header Госпитализация
+                        .row
+                            p Дата/время поступления*
+                            .datetime
+                                input
+                                .button.icon-button
+                                    .fa.fa-calendar
+                                .button.icon-button
+                                    .fa.fa-clock-o
+
+                        .row
+                            p Источник поступления
+                            select
+                                option Не указан
+
+                        .row
+                            p Тип госпитализации
+                            select
+                                option Не указан
+
+                        .row
+                            p Госпитализация в отделение*
+                            select
+                                option Не указано
+
+                        .row
+                            p Лечащий врач
+                            select
+                                option Не указан
+
+                        .row
+                            p № истории болезни
+                            input.small
+                            p.small Год*
+                            input.small
+
+                        .row
+                            p Причина госпитализации
+                            select
+                                option Не указана
+
+                    .column-block
+                        .header Состояние при госпитализации
+                        .row
+                            p Рост, см
+                            input
+
+                        .row
+                            p Вес, кг
+                            input
+
+                        .row
+                            p Температура, C
+                            input
+
+                        .row.flex-start
+                            p Состояние
+                            .block
+                                .inline-row
+                                    .checkbox.fa.fa-square-o
+                                    span Алкогольное опьянение
+
+                                .inline-row
+                                    .checkbox.fa.fa-square-o
+                                    span Наркотическое опьянение
+
+                        .row.flex-start
+                            p Травма
+                            .column-block
+                                select
+                                    option Не указано
+
+                                select
+                                    option Не указано
+
+                .row.flex-start.full-row
+                    p Диагноз направившего учреждения
+                    textarea
+
+    .actions
+        .left
+            .button
+                i.l-arr
+                | Назад
+            .button
+                | Далее
+                i.r-arr
+
+        .right
+            .button Сохранить изменения
+            .button.close-popup Отмена

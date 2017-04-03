@@ -1,0 +1,62 @@
+.patient-reception-list
+    .all-list-content
+        .header Список приёмов
+
+        ul.reception-list
+            - for( var i = 0; i < 19; ++i)
+                li
+                    p.info 01.02.2016 - Плановый осмотр диализного пациента.
+                    .actions
+                        .button.icon-button
+                            .fa.fa-print
+                        .button.open-reception Открыть
+                        .show-reception.button.icon-button
+                            .fa.fa-plus
+
+        .extender
+
+
+    .current-selection-list-content
+        .header
+            p Протоколы приёмов
+
+            .actions
+                .button.new-reception Начать приём
+                .button Очистить список
+
+        .reception-content-list
+            .reception
+                .reception-header
+                    p 01.02.2016 - Плановый осмотр диализного пациента
+                    .actions
+                        .button.icon-button
+                            .fa.fa-print
+                        .button.icon-button
+                            .fa.fa-minus
+
+                ul.reception-tabs
+                    li
+                        .reception-tab
+                            .icon-down
+                            | Физикальные исследования
+                        .content Нет данных
+
+                    li
+                        .reception-tab
+                            .icon-down
+                            | Физикальные исследования: осмотр
+                        .content Нет данных
+
+                    li
+                        .reception-tab
+                            .icon-down
+                            | История изменения ХБП
+                        .content Нет данных
+
+                    li
+                        .reception-tab
+                            .icon-down
+                            | Заключения
+                        .content Нет данных
+
+        .extender

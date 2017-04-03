@@ -1,0 +1,25 @@
+include couch
+include checkin-block
+include checkin-process-block
+include water-treatment
+include empty-block
+include camera-block
+include hospital-block
+
+.info-wrapper
+    - for (var x = 0; x < 6; x++)
+        +cameraBlock("Камера №" + (x + 1))
+            +hospitalBlock("Турченко Л.А.", "i/content/avatar.jpg", "Smartscan - Diascan: Низкий KT/V", "-159")
+            +hospitalBlock("Турченко Л.А.", "i/content/avatar.jpg", "Достигнут нижний предел насоса", "48")
+            +hospitalBlock("Турченко Л.А.", "i/content/avatar.jpg", "", "-159")
+            +hospitalBlock("Турченко Л.А.", "i/content/avatar.jpg", "Нет действующего предписания", "48")
+    +cameraBlock("Камера №7")
+        +emptyBlock()
+        +emptyBlock()
+        +emptyBlock()
+        +emptyBlock()
+    +cameraBlock("Камера №8")
+        +emptyBlock()
+        +emptyBlock()
+        +emptyBlock()
+        +emptyBlock()

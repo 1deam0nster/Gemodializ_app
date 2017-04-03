@@ -1,0 +1,175 @@
+$barWidth: 420px
+
+.patient-bar
+  flex: 0 0 $barWidth
+  width: $barWidth
+  overflow-x: hidden
+
+  .switcher-block, .search-block
+    padding: 10px
+    background: $block-color
+
+  .switcher-block
+    ul.patient-switcher
+      height: 30px
+
+      li:first-child a
+        font-size: 1.1rem
+
+  .switcher-content
+    width: 20000em
+    overflow-x: hidden
+    transition-duration: .5s
+    transition-timing-function: ease-out
+    transition-property: all
+    transform: translate3d(0px, 0px, 0px)
+
+  .block
+    width: $barWidth
+    float: left
+
+    .search-block
+      padding-top: 0
+
+      ul.division-switcher
+        height: 30px
+
+      .patient-search-textbox
+        margin: 0 0 10px 0
+        width: 100%
+
+    .filter-block
+      .filter-toggler
+        margin: 1px 0
+
+        .icon
+          margin-right: 5px
+          font-size: 1.1rem
+
+      .filter-settings
+        flex-direction: column
+        padding: 10px
+        background: $base-block-color
+        display: none
+
+        .parameter
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+
+          &+.parameter
+            margin-top: 10px
+
+          .title
+            width: 110px
+            font-size: 0.8rem
+
+          .value
+            flex-grow: 1
+
+            .tabs
+              height: 30px
+
+    .patient-list-block
+      table.patient-list
+        border-collapse: separate
+        border-spacing: 0 1px
+
+        thead
+          tr
+            background: $block-color
+
+            th
+              width: 65px
+
+              &:nth-child(2)
+                width: auto
+                text-align: left
+
+        tbody
+          td
+            height: 60px
+            background: $base-block-color
+            font-size: 0.92rem
+            font-weight: 300
+            padding: 0 0.3rem
+
+            img
+              width: 37px
+              height: 50px
+
+            &:nth-child(1)
+              text-align: left
+              padding-left: 10px
+
+            &:nth-child(2)
+              text-align: left
+
+
+    .base-data-block
+      background: $block-color
+      padding: 0 10px 10px
+      margin-bottom: 1px
+
+      .wrapper
+        display: flex
+
+        img
+          width: 64px
+          height: 87px
+          margin: 0 10px 3px 0
+
+        .info
+          +growFlexColumn()
+
+          p
+            height: 1rem
+            margin: 0
+            font-size: 0.8rem
+            font-weight: 300
+
+            span
+              font-weight: 500
+
+      ul.tabs
+        height: 30px
+
+        li.tab-title a
+          padding: 5px
+
+      .reports
+        margin-top: 10px
+
+    .clinical-diagnosis-block
+      background: $block-color
+      padding: 10px 20px
+
+      .title-bar
+        +growFlexRow()
+        justify-content: space-between
+        align-items: flex-end
+        margin-bottom: 10px
+
+        .title
+          font-size: 1.1rem
+
+        .check-diagnosis
+          font-size: 0.8rem
+          border-bottom: 1px dashed
+          cursor: pointer
+
+      .diagnosis-list
+        +growFlexColumn()
+        font-size: 0.8rem
+
+        .diagnosis-item
+          +growFlexRow()
+          margin-bottom: 10px
+
+          .date
+            width: 90px
+            padding-left: 10px
+
+          .value
+            width: 290px

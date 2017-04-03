@@ -1,0 +1,354 @@
+#header
+  background: $header-color
+  max-width: initial
+  line-height: $header-height
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex: 0 0 $header-height
+  z-index: 9999
+  color: red
+
+  .logo
+    text-align: left
+    flex: 0 0 220px
+    height: $header-height
+    background-color: $header-secondary-color
+    margin-left: 20px
+
+    img
+      margin: 0
+      height: 45px
+
+    img
+      margin-top: 3px
+
+  .datetime
+    color: $header-font-color
+    font-size: 1em
+    flex-direction: column
+    text-align: center
+    margin-top: -10px
+    font-weight: bold
+
+    .date, .time
+      height: 20px
+
+  ul.main-menu
+    display: flex
+    flex-grow: 1
+    flex-direction: row
+    margin: 0
+    justify-content: flex-start
+    align-self: center
+    align-items: center
+    list-style: none
+
+    li
+      display: flex
+      align-items: center
+      color: $header-menu-font-color
+      height: $header-height
+
+      .menu-expander
+        font-size: 14px
+        margin-left: 10px
+        color: #fff
+
+    li:not(.separator)
+      padding: 0 35px
+
+      &:hover
+        +hoverEffect
+
+        a
+          color: $header-menu-hover-font-color
+
+
+      a
+        color: $header-menu-font-color
+        font-weight: normal
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+
+    li.separator
+      +sprite($main-menu-separator)
+
+    .divisions-content
+      display: none
+      flex-direction: row
+      position: absolute
+      left: 0
+      margin: 70px 0px 0px 240px
+      background-color: $font-color
+      width: 430px
+      height: 350px
+      z-index: -1
+
+      ul.divisions, ul.division-submenu
+        display: flex
+        flex-direction: column
+        margin: 0
+
+        li
+          padding: 0 10px 0 15px
+          line-height: normal
+          height: 39px
+          color: $header-menu-hover-font-color
+          font-weight: 300
+
+          &.current
+            background: $header-current-item-bg
+            color: $header-current-item-color
+            font-weight: 400
+
+      ul.division-submenu
+        li.current
+          background: $header-current-item-bg
+
+      ul.divisions
+        width: 250px
+
+        li:hover
+          background: $header-current-item-bg
+
+      ul.division-submenu
+        display: none
+        width: 180px
+
+        &.current
+          display: flex
+
+        li
+          background: $header-current-item-bg
+          color: $header-menu-hover-font-color
+
+    .header-menu
+      display: none
+      position: absolute
+      left: 0
+      margin: 70px 0px 0px 0px
+      background-color: $header-menu-bg-color
+      z-index: -1
+
+      ul
+        list-style: none
+        margin: 0
+
+        li
+          color: $header-menu-hover-font-color
+
+          &:hover
+            background: $header-current-item-bg
+
+  .account
+    background-color: $header-secondary-color
+    color: $header-font-color
+    height: $header-height
+    flex: 0 0 400px
+    justify-content: flex-end
+    margin: 0
+    padding: 0
+    display: flex
+
+    .separator
+      display: flex
+      align-self: center
+      +sprite($main-menu-separator)
+
+    .options
+      display: flex
+      flex-basis: 90px
+      justify-content: center
+      // +спрайт с шестерёнкой
+
+      &:hover
+        +hoverEffect
+
+      span.icon.icon-gear
+        width: 100%
+        font-size: 1.8em
+        margin: 22px 0
+        text-align: center
+
+      .options-menu
+        display: none
+        flex-direction: column
+        position: absolute
+        //margin: 70px 0px 0px -195px
+        background-color: $header-menu-bg-color
+        width: 300px
+        padding: 0 10px 15px 10px
+        cursor: default
+        line-height: normal
+        right: 0px
+        top: 70px
+        z-index: -1
+
+        .title
+          display: flex
+          flex-direction: column
+          color: #fff
+          font-weight: lighter
+          font-size: 0.9em
+          text-align: center
+          margin: 30px 0 15px 0
+
+          &:first-child
+            margin: 15px 0
+
+          &:after
+            content: ""
+            display: block
+            margin-top: 2px
+            +sprite($options-separator)
+
+        .eva-input
+          text-align: center
+
+        .menu-button
+          display: flex
+          flex-direction: column
+          flex-basis: 42px
+          height: 42px
+          background: $settings-menu-button-bg
+          color: #fff
+          font-weight: 300
+          font-size: 0.95em
+          justify-content: center
+          align-items: center
+          margin-bottom: 8px
+          border-radius: $border-radius
+
+          &:hover
+            background: lighten($settings-menu-button-bg, 10%)
+
+        .menu-row
+          display: flex
+          flex-direction: row
+          flex-grow: 1
+          justify-content: space-between
+
+          .menu-button
+            flex-grow: 1
+
+            &:first-child
+              margin-right: 6px
+
+        input[type="text"]
+          background: $active-element-bg !important
+          color: #fff
+          border: 1px solid $border-color
+          border-radius: $border-radius
+          height: 42px
+
+        .lang
+          display: flex
+          flex-direction: row
+          flex-grow: 1
+
+          .rus, .eng
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            flex-grow: 1
+            height: 40px
+            border: 1px solid $settings-menu-button-bg
+            color: $header-menu-font-color
+
+            &.active
+              background: $settings-menu-button-bg
+              color: #fff
+
+          .rus
+            border-radius: $border-radius 0 0 $border-radius
+
+          .eng
+            border-radius: 0 $border-radius $border-radius 0
+
+    .account-menu
+      display: flex
+      flex: 0 0 235px
+      color: $header-font-color
+      cursor: pointer
+
+      .avatar
+        width: 75px
+        height: $header-height
+        margin-top: 10px
+
+        // TODO: To delete
+        .image
+          background-color: #e9e9e9
+          width: 52px
+          height: 52px
+          border-radius: 50%
+          margin: 0 auto
+          background: url('../i/content/avatar.jpg')
+          background-repeat: no-repeat
+          background-clip: border-box
+          background-size: cover
+
+      .account-menu-content
+        display: none
+        position: absolute
+        margin: 70px 0 0 -225px
+        background-color: $header-menu-bg-color
+        color: $header-menu-font-color
+        width: 235px
+        font-size: 1.1em
+        z-index: -1
+
+        ul.list
+          a
+            color: $header-menu-font-color
+
+
+
+        .list
+          list-style: none
+          font-size: 1em
+          margin: 0
+
+          .item
+            padding: 22px 27px
+
+            img
+              margin-right: 20px
+
+
+      .username
+        font-size: 1.1em
+
+      &:hover
+        background: $font-color
+        color: $header-menu-hover-font-color
+
+    .signout
+      width: $header-height
+      height: $header-height
+      cursor: pointer
+      color: $header-font-color
+
+      &:hover
+        background: $font-color
+        color: $header-menu-hover-font-color
+
+      .icon.icon-switch
+        display: inline-block
+        font-size: 34px
+        margin: 18px
+
+.header-menu
+  display: none
+  position: absolute
+  left: 0
+  margin: 70px 0px 0px 0px
+  background-color: #333232
+  z-index: -1
+
+  ul
+    list-style: none
+    margin: 0

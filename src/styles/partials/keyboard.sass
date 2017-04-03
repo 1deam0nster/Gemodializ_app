@@ -1,0 +1,54 @@
+#keyboard
+  flex-direction: row
+  flex-wrap: wrap
+  position: absolute
+  height: 400px
+  background: url('../i/design/neon/bar-bg.png') rgba(0, 0, 0, 0.8)
+  width: 100%
+  border-top: 3px solid #2c97cf
+  padding: 1em 1em 1.6em
+  z-index: 99999
+  transition: 0.4s ease
+
+.key 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 5.9% 
+  height: 16.5% 
+  line-height: 0
+  background: linear-gradient(0deg, #183e53, #1a5271)
+  color: #fff
+  text-align: center 
+  margin: 1% 0 0 1% 
+  border-radius: 8px 
+  float: left 
+  font-size: 14px 
+  text-decoration: none 
+
+
+.key.delete, .key.tab 
+  width: 8.3% 
+
+
+.key.caps, .key.return 
+  width: 10.55% 
+
+
+.key.space 
+  width: 60% 
+  clear: both 
+  margin-left: 20% 
+  position: relative 
+
+
+.key.shift 
+  width: 14% 
+
+
+.key:active 
+  background-color: rgba(255, 255, 255, 0.9)
+
+
+.keyrow 
+  clear: both

@@ -1,0 +1,94 @@
+body
+  display: flex
+  flex-direction: column
+  align-items: center
+  align-content: center
+  justify-content: space-around
+  flex-grow: 1
+  flex-shrink: 1
+  margin: 0
+  overflow: hidden
+  font-family: 'Roboto'
+  background: #EA5C54  /* Old browsers */
+  background: url('../i/design/neon/bg.png'), radial-gradient(circle at center,#133b53, #171c20 66%)
+  height: 100vh
+
+  .authorize
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 460px
+    border-top: 4px solid #2c97cf
+    height: 245px
+    padding: 0px 10px
+    background: #333
+    transition: 1s cubic-bezier(0.43, -0.33, 0.11, 1.05)
+
+    &.complete
+      // TODO: Грабля
+      margin-top: -200%
+
+    .title
+      img
+        width: 190px
+        margin: 15px auto
+
+    .fields
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .login, .password
+        input
+          width: 240px
+          height: 23px
+          border-radius: 5px
+          box-shadow: inset 0px 1px 5px 1px #ccc
+          border: 1px solid #a6a6a6
+          padding: 3px 10px
+          margin-bottom: 12px
+          color: #878787
+
+          &:focus
+            box-shadow: 0 0 4px 1px #2c97cf
+
+      .submit
+        cursor: pointer
+        width: 112px
+        height: 32px
+        background: url('../i/design/neon/login-submit.png')
+        margin-top: 12px
+
+        &:hover
+          background-position: 113px
+
+    .additional
+      display: flex
+      flex-direction: row
+      align-self: flex-end
+      width: 90px
+      font-size: 1.1em
+      color: #fff
+      justify-content: space-between
+
+      .separator
+        width: 1px
+        height: 20px
+        background: url('../i/design/neon/login-separator.png') no-repeat
+
+      .help, .ru, .eng
+        cursor: pointer
+
+        &:hover, &.active
+          color: #2c97cf
+          text-shadow: 0 0 5px #2c97cf
+
+    .progress
+      display: none
+      flex-direction: column
+      margin-top: 20px
+
+      p
+        font-size: 1em
+        color: #a6a6a6

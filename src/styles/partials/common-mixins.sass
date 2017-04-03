@@ -1,0 +1,25 @@
+@mixin flexRow()
+  display: flex
+  flex-direction: row
+
+@mixin flexColumn()
+  display: flex
+  flex-direction: column
+
+@mixin growFlexColumn()
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+@mixin growFlexRow()
+  display: flex
+  flex-direction: row
+  flex-grow: 1
+
+@mixin verticalCenteredText()
+  display: flex
+  flex-direction: row
+  align-items: center
+
+@mixin fullHeightBlock()
+  height: calc(100vh - 70px)

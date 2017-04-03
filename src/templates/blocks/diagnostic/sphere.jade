@@ -1,0 +1,41 @@
+.sphere-content
+    .options
+        .block.slider-option
+            p Удалённость от ядра
+            img(src="i/content/core-distance-white.png")
+
+        .block.slider-option
+            p Кривизна рёбер
+            img(src="i/content/links-curvature-white.png")
+
+        .block
+            .row
+                .checkbox.fa.fa-square-o
+                p Показывать подписи
+            .row
+                .checkbox.fa.fa-square-o
+                p Показывать связи
+            .row
+                .checkbox.fa.fa-square-o
+                p Вращать сферу
+
+        .block.transparent
+            .row.columns-2
+                .button Снять выделение
+                .button Вид по умолчанию
+
+            .row.columns-2
+                p Широта определяется
+                select
+                    option Баллами связей
+                    option Числом связей
+                    option Дискретно
+
+            .row.columns-2
+                p Цвет нозологий по
+                select
+                    option Достоверности
+                    option Баллам
+
+    .sphere
+        img(src="i/content/sphere.png")
