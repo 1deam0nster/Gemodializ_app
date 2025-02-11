@@ -1,1 +1,2 @@
-Doctor_Prototype
+## Фронтенд часть, верстка Maximus UI
+Дизайн создавался еще во времена отсутствия таких инструментов как Figma, Sketch.app в Photoshop, далее версткой занимался Denis Sinedyk
